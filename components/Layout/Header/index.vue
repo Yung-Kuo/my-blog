@@ -2,24 +2,26 @@
 <template>
     <header
         id="header"
-        class="group bg-tree-of-life bg-cover bg-center bg-opacity-50 w-full h-[36rem] z-20"
+        class="group bg-cliff-meets-ocean bg-cover bg-center bg-opacity-50 w-full h-[36rem] z-20"
     >
         <div
-            class="bg-black bg-opacity-40 group-hover:bg-opacity-20 dark:bg-opacity-60 dark:group-hover:bg-opacity-30 w-full h-full transition-all duration-500 overflow-y-hidden parent"
+            class="parent bg-black bg-opacity-30 group-hover:bg-opacity-20 dark:bg-opacity-50 dark:group-hover:bg-opacity-30 w-full h-full transition-all duration-500 overflow-y-hidden"
         >
             <div
-                id="blog_logo"
-                class="child text-neutral-300 p-[10cqh] pl-12 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min"
+                class="child text-neutral-300 dark:text-neutral-400 py-[10cqh] px-6 hover:dark:text-yellow-400 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min cursor-pointer"
             >
-                <h1>Yung</h1>
-                <h1>Kuo's</h1>
-                <h1>Blog</h1>
+                <NuxtLink to="/">
+                    <h1>Yung</h1>
+                    <h1>Kuo's</h1>
+                    <h1>Blog</h1>
+                </NuxtLink>
             </div>
         </div>
+        <GadgetLightSwitch />
     </header>
 </template>
 
-<style>
+<style scoped>
 h1 {
     font-family: "Ubuntu";
 }
@@ -27,7 +29,7 @@ h1 {
     container-type: size;
 }
 .child {
-    font-size: max(16cqh, 1.6em);
-    padding-top: min();
+    font-size: max(16cqh, 1.6rem);
+    padding-left: max(10cqh, 1.5rem);
 }
 </style>

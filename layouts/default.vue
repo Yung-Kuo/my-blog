@@ -13,8 +13,8 @@ function handleWheelEvent(event) {
     if (rect.height - event.deltaY < 6 * rem) {
         // header.style.height = "100px";
         header.style.height = `${6 * rem}px`;
-    } else if (rect.height - event.deltaY > 600) {
-        header.style.height = "600px";
+    } else if (rect.height - event.deltaY > 36 * rem) {
+        header.style.height = `${36 * rem}px`;
     } else {
         header.style.height = `${rect.height - event.deltaY}px`;
         if (root.classList.contains("overflow-y-scroll")) {
@@ -39,7 +39,7 @@ function handleWheelEvent(event) {
         @wheel="handleWheelEvent($event)"
     >
         <LayoutHeader class="sticky top-0" />
-        <GadgetLightSwitch />
+        <!-- <GadgetLightSwitch /> -->
         <slot />
     </div>
 </template>
