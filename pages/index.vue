@@ -7,7 +7,7 @@
                 <!-- Resume -->
                 <div>
                         <h1
-                                class="text-6xl w-max cursor-pointer hover:text-neutral-900 transition-all dark:text-neutral-400 hover:dark:text-neutral-300 text-neutral-700"
+                                class="text-6xl hover:scale-105 w-max cursor-pointer hover:text-neutral-900 transition-all dark:text-neutral-400 hover:dark:text-neutral-300 text-neutral-700"
                         >
                                 Resume
                         </h1>
@@ -15,7 +15,7 @@
                 <!-- Gallery -->
                 <div>
                         <h1
-                                class="text-6xl w-max cursor-pointer hover:text-neutral-900 transition-all dark:text-neutral-400 hover:dark:text-neutral-300 text-neutral-700"
+                                class="text-6xl hover:scale-105 w-max cursor-pointer hover:text-neutral-900 transition-all dark:text-neutral-400 hover:dark:text-neutral-300 text-neutral-700"
                         >
                                 Gallery
                         </h1>

@@ -11,7 +11,7 @@
                 ></div>
                 <!-- mask -->
                 <div
-                        class="z-30 absolute parent bg-black bg-opacity-20 group-hover:bg-opacity-10 w-full h-full transition-all overflow-y-hidden"
+                        class="z-30 absolute parent bg-gradient-to-t from-black/40 to-black/20 group-hover:bg-opacity-10 w-full h-full transition-all overflow-y-hidden"
                 >
                         <!-- for large screen -->
                         <div
@@ -21,11 +21,15 @@
                                 <!-- blog logo -->
                                 <NuxtLink to="/">
                                         <div
-                                                class="child text-neutral-300 dark:text-neutral-400 py-[0cqh] hover:dark:text-yellow-400 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min tracking-wider font-semibold"
+                                                class="child group/logo py-[0cqh] text-neutral-300 dark:text-neutral-400 hover:dark:text-yellow-400 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min tracking-wider font-semibold"
                                         >
                                                 <h1>Yung</h1>
                                                 <h1>Kuo's</h1>
-                                                <h1>Blog</h1>
+                                                <h1
+                                                        class="rotate-12 group-hover/logo:rotate-[30deg] origin-top-left transition-transform"
+                                                >
+                                                        Blog
+                                                </h1>
                                         </div>
                                 </NuxtLink>
                         </div>
@@ -38,7 +42,12 @@
                                         >
                                                 <h1>Yung</h1>
                                                 <h1>Kuo's</h1>
-                                                <h1>Blog</h1>
+
+                                                <h1
+                                                        class="rotate-12 -translate-x-1"
+                                                >
+                                                        Blog
+                                                </h1>
                                         </div>
                                 </NuxtLink>
                         </div>

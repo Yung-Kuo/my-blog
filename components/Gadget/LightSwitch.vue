@@ -22,11 +22,11 @@ function toggleDark() {
 </script>
 <template>
         <div
-                class="absolute top-6 right-6 flex z-30 w-12 h-12 items-center justify-center text-yellow-400 text-3xl transition-all rounded-lg group overflow-hidden bg-neutral-500 dark:bg-neutral-800"
+                class="absolute top-6 right-6 flex z-30 w-12 h-12 items-center justify-center text-3xl transition-all rounded-lg group overflow-hidden bg-neutral-500 dark:bg-neutral-800"
                 @mousedown="toggleDark()"
         >
                 <div
-                        class="w-full h-full bg-sky-500 bg-opacity-40 hover:bg-sky-700 hover:bg-opacity-60 dark:bg-indigo-400 dark:bg-opacity-0 hover:dark:bg-opacity-20 flex items-center justify-center transition-all"
+                        class="w-full h-full bg-sky-500 bg-opacity-40 hover:bg-sky-700 hover:bg-opacity-60 dark:bg-indigo-400 dark:bg-opacity-0 hover:dark:bg-opacity-20 flex items-center justify-center transition-all text-yellow-400"
                 >
                         <Transition
                                 enter-active-class="transition-all duration-500"
