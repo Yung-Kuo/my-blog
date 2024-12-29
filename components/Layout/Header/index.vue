@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-        <header id="header" class="group w-full h-[36rem] z-20">
+        <header id="header" class="w-full group h-[36rem] z-20">
                 <!-- light mode -->
                 <div
                         class="z-20 dark:opacity-0 opacity-100 absolute bg-cover bg-center transition-all duration-300 bg-cliff-meets-ocean top-0 left-0 w-full h-full"
@@ -10,8 +10,10 @@
                         class="z-20 opacity-0 dark:opacity-100 absolute bg-cover bg-center transition-all duration-300 bg-city-before-dawn top-0 left-0 w-full h-full"
                 ></div>
                 <!-- mask -->
+                <!-- bg-gradient-to-t from-black/40 to-black/20 hover:from-black/30 hover:to-black/10 -->
+                <!-- bg-black bg-opacity-20 group-hover:bg-opacity-10 -->
                 <div
-                        class="z-30 absolute parent bg-gradient-to-t from-black/40 to-black/20 group-hover:bg-opacity-10 w-full h-full transition-all overflow-y-hidden"
+                        class="z-30 absolute parent transition-colors bg-black bg-opacity-20 group-hover:bg-opacity-10 w-full h-full overflow-y-hidden"
                 >
                         <!-- for large screen -->
                         <div
