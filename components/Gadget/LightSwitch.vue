@@ -37,7 +37,7 @@ function toggleDark() {
                                 leave-to-class="-translate-x-8 translate-y-8 text-sm"
                         >
                                 <IconsSun
-                                        v-show="!isDark"
+                                        v-if="!isDark"
                                         class="absolute transition-all"
                                 />
                         </Transition>
@@ -50,7 +50,7 @@ function toggleDark() {
                                 leave-to-class="-translate-x-8 translate-y-8 text-sm"
                         >
                                 <IconsMoon
-                                        v-show="isDark"
+                                        v-if="isDark"
                                         class="absolute transition-all"
                                 />
                         </Transition>
