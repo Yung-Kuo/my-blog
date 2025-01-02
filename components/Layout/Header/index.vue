@@ -22,10 +22,14 @@
                     <div
                         class="child group/logo py-[0cqh] text-neutral-300 dark:text-neutral-400 hover:dark:text-yellow-400 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min tracking-wider font-semibold opacity-60 hover:opacity-100"
                     >
-                        <h1>Yung</h1>
-                        <h1>Kuo's</h1>
+                        <div
+                            class="-rotate-12 group-hover/logo:rotate-0 origin-bottom-left transition-transform"
+                        >
+                            <h1>Yung</h1>
+                            <h1>Kuo's</h1>
+                        </div>
                         <h1
-                            class="rotate-12 group-hover/logo:rotate-[30deg] origin-top-left transition-transform"
+                            class="rotate-12 group-hover/logo:rotate-0 origin-top-left transition-transform"
                         >
                             Blog
                         </h1>
@@ -41,9 +45,8 @@
                     >
                         <h1>Yung</h1>
                         <h1>Kuo's</h1>
-
                         <h1
-                            class="rotate-12 group-hover/logo:rotate-[30deg] origin-top-left transition-transform"
+                            class="rotate-12 origin-top-left transition-transform"
                         >
                             Blog
                         </h1>
