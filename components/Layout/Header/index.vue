@@ -20,16 +20,16 @@
         <!-- blog logo -->
         <NuxtLink to="/">
           <div
-            class="child group/logo py-[0cqh] text-neutral-300 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min tracking-wider font-semibold opacity-50 hover:opacity-80"
+            class="child group/logo py-[0cqh] text-neutral-300 hover:text-yellow-400 leading-none transition-colors flex flex-col w-min h-min tracking-wider font-semibold opacity-30 hover:opacity-80"
           >
             <div
-              class="-rotate-12 group-hover/logo:rotate-0 origin-bottom-left transition-transform"
+              class="group-hover/logo:-rotate-12 rotate-0 origin-bottom-left transition-transform"
             >
               <h1>Yung</h1>
               <h1>Kuo's</h1>
             </div>
             <h1
-              class="rotate-12 group-hover/logo:rotate-0 origin-top-left transition-transform"
+              class="group-hover/logo:rotate-12 rotate-0 origin-top-left transition-transform"
             >
               Blog
             </h1>
