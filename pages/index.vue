@@ -1,4 +1,31 @@
-<script setup></script>
+<script setup>
+const supabase = useSupabaseClient();
+
+onMounted(async () => {
+  const { data: images, error: error } = await supabase.storage
+    .from("images")
+    .list("gallery");
+
+  if (error) {
+    console.error("Error fetching gallery images:", error.message);
+    return;
+  } else {
+    const publicUrls = [];
+    for (const image of images) {
+      const { data: publicUrl } = await supabase.storage
+        .from("images")
+        .getPublicUrl(`gallery/${image.name}`);
+
+      if (publicUrl) {
+        publicUrls.push(publicUrl.publicUrl);
+      }
+    }
+    gallery.value = publicUrls;
+  }
+});
+
+const gallery = ref([]);
+</script>
 <template>
   <div
     id="body"
@@ -10,7 +37,7 @@
       <div class="h-4" />
       <!-- divider -->
       <div
-        class="grow border-2 border-neutral-800 dark:border-neutral-300"
+        class="grow border-2 border-neutral-400 transition-all dark:border-neutral-700"
       ></div>
       <div class="h-8" />
       <!-- project links -->
@@ -20,7 +47,11 @@
             to="https://twitter-clone-rho-smoky.vercel.app/"
             target="_blank"
           >
-            <UITitleSub> Twitter Clone </UITitleSub>
+            <UITitleSub
+              class="text-sky-600 hover:text-sky-700 dark:text-sky-500 dark:hover:text-sky-400"
+            >
+              Twitter Clone
+            </UITitleSub>
           </NuxtLink>
           <NuxtLink
             to="https://twitter-clone-rho-smoky.vercel.app/"
@@ -49,31 +80,31 @@
     <!-- Resume -->
     <NuxtLink to="/resume">
       <div
-        class="group flex w-min cursor-pointer justify-center rounded-md bg-neutral-400 px-32 py-10 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-800 hover:dark:bg-neutral-700"
+        class="group flex w-min cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 px-28 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700"
       >
-        <UITitleAlt>Resume</UITitleAlt>
+        <UITitleAlt
+          class="text-neutral-700 group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"
+          >Resume</UITitleAlt
+        >
       </div>
     </NuxtLink>
     <!-- Gallery -->
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-6">
       <UITitleMain>Gallery</UITitleMain>
       <UITitleSub>Digital & Analog</UITitleSub>
-      <div class="mt-16 flex flex-wrap gap-4 xl:gap-5">
-        <div
-          class="h-32 w-32 rounded-md border border-neutral-700 xl:h-60 xl:w-60"
-        ></div>
-
-        <div
-          class="h-32 w-32 rounded-md border border-neutral-700 xl:h-60 xl:w-60"
-        ></div>
-
-        <div
-          class="h-32 w-32 rounded-md border border-neutral-700 xl:h-60 xl:w-60"
-        ></div>
-
-        <div
-          class="h-32 w-32 rounded-md border border-neutral-700 xl:h-60 xl:w-60"
-        ></div>
+      <div class="mt-12">
+        <ul class="flex flex-wrap gap-4 xl:gap-5">
+          <li
+            v-for="pic in gallery"
+            class="h-32 w-32 overflow-hidden xl:h-60 xl:w-60"
+          >
+            <NuxtImg
+              :src="pic"
+              class="h-full w-full object-cover transition-all duration-500 hover:scale-110"
+              loading="lazy"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   </div>

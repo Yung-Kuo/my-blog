@@ -72,7 +72,7 @@ function handleWheelEvent(event) {
 <template>
   <div
     id="root"
-    class="bg-neutral-300 dark:bg-neutral-900 h-screen w-full transition-all duration-300 overflow-y-scroll"
+    class="h-screen w-full overflow-y-scroll bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
     @wheel="handleWheelEvent($event)"
   >
     <LayoutHeader class="sticky top-0" />
