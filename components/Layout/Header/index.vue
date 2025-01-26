@@ -45,7 +45,7 @@
           >
             <h1>Yung</h1>
             <h1>Kuo's</h1>
-            <h1 class="origin-top-left rotate-12 transition-transform">Blog</h1>
+            <h1 class="origin-top-left rotate-0 transition-transform">Blog</h1>
           </div>
         </NuxtLink>
       </div>

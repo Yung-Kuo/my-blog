@@ -1,4 +1,8 @@
 <script setup>
+definePageMeta({
+  layout: "home",
+});
+
 const supabase = useSupabaseClient();
 
 onMounted(async () => {
