@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  layout: "scroll",
+  layout: "home",
 });
 
 const supabase = useSupabaseClient();

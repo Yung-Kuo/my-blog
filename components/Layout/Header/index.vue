@@ -1,17 +1,18 @@
 <script setup></script>
 <template>
-  <header id="header" class="group z-20 h-[36rem] w-full">
+  <header
+    id="header"
+    class="group sticky left-0 top-0 z-20 w-full xl:h-[36rem]"
+  >
     <!-- light mode -->
     <div
-      class="absolute left-0 top-0 z-20 h-full w-full bg-cliff-meets-ocean bg-cover bg-center opacity-100 transition-all duration-300 dark:opacity-0"
+      class="absolute z-20 h-full w-full bg-cliff-meets-ocean bg-cover bg-center opacity-100 transition-all duration-300 dark:opacity-0"
     ></div>
     <!-- dark mode -->
     <div
-      class="absolute left-0 top-0 z-20 h-full w-full bg-city-before-dawn bg-cover bg-center opacity-0 transition-all duration-300 dark:opacity-100"
+      class="absolute z-20 h-full w-full bg-city-before-dawn bg-cover bg-center opacity-0 transition-all duration-300 dark:opacity-100"
     ></div>
     <!-- mask -->
-    <!-- bg-gradient-to-t from-black/40 to-black/20 hover:from-black/30 hover:to-black/10 -->
-    <!-- bg-black bg-opacity-20 group-hover:bg-opacity-10 -->
     <div
       class="parent absolute z-30 h-full w-full overflow-y-hidden bg-black bg-opacity-20 transition-colors group-hover:bg-opacity-0"
     >

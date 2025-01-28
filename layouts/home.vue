@@ -38,7 +38,6 @@ function handleWheelEvent(event) {
   if (rect.height === 0 * rem && bodyRect.top < rect.height) return;
   // fully collapsed and still scrolling, prevent further collpase
   if (rect.height - event.deltaY < 0 * rem) {
-    // header.style.height = "100px";
     header.style.height = `${0 * rem}px`;
     // logo padding
     logoPadding();
@@ -53,8 +52,6 @@ function handleWheelEvent(event) {
   else {
     // body at the top, prevent scrolling
     if (root.classList.contains("overflow-y-scroll")) {
-      // root.classList.add("overflow-y-hidden");
-      // root.classList.remove("overflow-y-scroll");
       html.classList.add("overflow-hidden");
     }
     // expand or collapse header
@@ -64,15 +61,13 @@ function handleWheelEvent(event) {
   }
 
   if (header.style.height === `${0 * rem}px`) {
-    // root.classList.add("overflow-y-scroll");
-    // root.classList.remove("overflow-y-hidden");
-    // html.classList.remove("overflow-hidden");
-    html.style.overflowY = "auto";
+    // html.style.overflowY = "auto";
+    root.classList.add("overflow-scroll");
+    root.classList.remove("overflow-hidden");
   } else if (header.style.height === `${36 * rem}px`) {
-    // root.classList.add("overflow-y-hidden");
-    // root.classList.remove("overflow-y-scroll");
-    // html.classList.add("overflow-hidden");
-    html.style.overflowY = "hidden";
+    // html.style.overflowY = "hidden";
+    root.classList.add("overflow-hidden");
+    root.classList.remove("overflow-scroll");
   }
 }
 </script>
@@ -81,7 +76,7 @@ function handleWheelEvent(event) {
     <GadgetLightSwitch />
     <div
       id="root"
-      class="w-full bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
+      class="h-screen w-full overflow-hidden bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
       @wheel="handleWheelEvent($event)"
     >
       <LayoutHeader class="sticky top-0" />
@@ -90,8 +85,8 @@ function handleWheelEvent(event) {
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 html {
   overflow: hidden;
 }
-</style>
+</style> -->
