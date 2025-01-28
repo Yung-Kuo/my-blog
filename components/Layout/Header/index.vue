@@ -37,7 +37,7 @@
         </NuxtLink>
       </div>
       <!-- for small screen -->
-      <div class="flex h-min w-min px-7 py-5 xl:hidden">
+      <div class="flex h-min w-min px-8 py-6 xl:hidden">
         <!-- blog logo -->
         <NuxtLink to="/">
           <div

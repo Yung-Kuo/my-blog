@@ -67,7 +67,7 @@
         </template>
       </UISection>
       <!-- Experience -->
-      <UISection expand class="max-w-screen-md xl:w-1/2 2xl:w-1/3">
+      <UISection expand class="max-w-full xl:w-1/2 2xl:w-1/3">
         <template #title="titleProps">
           <UITitleMain expand :isExpand="titleProps.isExpand"
             >Experience</UITitleMain

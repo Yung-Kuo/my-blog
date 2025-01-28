@@ -7,13 +7,15 @@ const props = defineProps({
 });
 </script>
 <template>
-  <h3
-    class="w-max text-2xl text-neutral-600 transition-all dark:text-neutral-400 xl:text-3xl"
+  <div
+    class="w-full break-words text-2xl text-neutral-600 transition-all dark:text-neutral-400 xl:text-3xl"
     :class="{
       'hover:scale-105 hover:text-neutral-700 dark:hover:text-neutral-300':
         !props.noHover,
     }"
   >
-    <slot />
-  </h3>
+    <h3>
+      <slot />
+    </h3>
+  </div>
 </template>

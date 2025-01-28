@@ -33,7 +33,7 @@ const gallery = ref([]);
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-36 px-5 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
+    class="flex flex-col items-center gap-36 px-8 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
   >
     <!-- Projects -->
     <div class="flex w-full flex-col">
@@ -65,10 +65,10 @@ const gallery = ref([]);
       <UITitleMain>Gallery</UITitleMain>
       <UITitleSub>Digital & Analog</UITitleSub>
       <div class="mt-12">
-        <ul class="flex flex-wrap gap-4 xl:gap-8">
+        <ul class="flex flex-wrap gap-2 xl:gap-8">
           <li
             v-for="pic in gallery"
-            class="h-32 w-32 overflow-hidden xl:h-64 xl:w-64"
+            class="h-40 w-40 overflow-hidden xl:h-64 xl:w-64"
           >
             <NuxtImg
               :src="pic"

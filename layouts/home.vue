@@ -66,12 +66,10 @@ function handleWheelEvent(event) {
   if (header.style.height === `${0 * rem}px`) {
     root.classList.add("overflow-y-scroll");
     root.classList.remove("overflow-y-hidden");
-
     html.classList.remove("overflow-hidden");
   } else if (header.style.height === `${36 * rem}px`) {
     root.classList.add("overflow-y-hidden");
     root.classList.remove("overflow-y-scroll");
-
     html.classList.add("overflow-hidden");
   }
 }
