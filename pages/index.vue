@@ -33,7 +33,7 @@ const gallery = ref([]);
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-60 px-5 pb-40 pt-20 text-2xl text-neutral-500 xl:px-20"
+    class="flex flex-col items-center gap-36 px-5 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
   >
     <!-- Projects -->
     <div class="flex w-full flex-col">
@@ -45,14 +45,14 @@ const gallery = ref([]);
       ></div>
       <div class="h-8" />
       <!-- project links -->
-      <div class="flex gap-10 xl:justify-center">
+      <div class="flex justify-center gap-10">
         <ProjectsTwitterClone />
       </div>
     </div>
     <!-- Resume -->
     <NuxtLink to="/resume">
       <div
-        class="group flex w-min cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 px-28 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700"
+        class="group flex w-min cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 px-16 py-6 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 xl:px-28 xl:py-8"
       >
         <UITitleAlt
           class="text-neutral-700 group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"

@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <!--  -->
-  <div class="flex flex-col gap-20 p-10 xl:p-20 xl:pb-40">
+  <div class="flex flex-col gap-16 p-10 py-20 xl:gap-24 xl:p-20 xl:pb-40">
     <UISection>
       <template #title>
         <UITitleMain noHover>Contact Info</UITitleMain>
@@ -54,9 +54,9 @@
       </template>
     </UISection>
     <!--  -->
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap gap-10 xl:gap-0">
       <!-- Projects -->
-      <UISection expand class="xl:w-1/2">
+      <UISection expand class="max-w-screen-md xl:w-1/2 2xl:w-1/3">
         <template #title="titleProps">
           <UITitleMain expand :isExpand="titleProps.isExpand"
             >Projects</UITitleMain
@@ -67,7 +67,7 @@
         </template>
       </UISection>
       <!-- Experience -->
-      <UISection expand class="xl:w-1/2">
+      <UISection expand class="max-w-screen-md xl:w-1/2 2xl:w-1/3">
         <template #title="titleProps">
           <UITitleMain expand :isExpand="titleProps.isExpand"
             >Experience</UITitleMain
@@ -82,6 +82,10 @@
     <UISection>
       <template #title>
         <UITitleMain noHover>Education</UITitleMain>
+      </template>
+      <template #sub>
+        <UITitleSub noHover>B.S. Information Management, 2021</UITitleSub>
+        <UITitleSub noHover>National Sun Yat-sen University(NSYSU)</UITitleSub>
       </template>
     </UISection>
     <!--  -->

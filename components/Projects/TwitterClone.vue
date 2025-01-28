@@ -9,7 +9,7 @@
     </NuxtLink>
     <NuxtLink to="https://twitter-clone-rho-smoky.vercel.app/" target="_blank">
       <div
-        class="group grid h-60 w-80 grid-cols-1 grid-rows-1 overflow-hidden rounded-md border-0 dark:border dark:border-neutral-700"
+        class="group grid h-48 w-64 grid-cols-1 grid-rows-1 overflow-hidden rounded-md border-0 dark:border dark:border-neutral-700 xl:h-60 xl:w-80"
       >
         <div
           class="z-10 col-start-1 row-start-1 h-full w-full rounded-md bg-[url('/assets/photo/twitter-clone.webp')] bg-cover bg-center bg-no-repeat transition-all group-hover:scale-105"

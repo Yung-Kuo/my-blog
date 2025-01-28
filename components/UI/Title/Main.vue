@@ -29,7 +29,7 @@ const props = defineProps({
 
     <span
       v-if="props.expand"
-      class="grid w-8 grid-cols-1 grid-rows-1 place-items-center"
+      class="grid w-8 grid-cols-1 grid-rows-1 place-items-center transition-all xl:opacity-0 xl:group-hover:opacity-100"
     >
       <Transition
         enter-active-class="transition-all duration-300"
