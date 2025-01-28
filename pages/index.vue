@@ -65,10 +65,10 @@ const gallery = ref([]);
       <UITitleMain>Gallery</UITitleMain>
       <UITitleSub>Digital & Analog</UITitleSub>
       <div class="mt-12">
-        <ul class="flex flex-wrap gap-4 xl:gap-5">
+        <ul class="flex flex-wrap gap-4 xl:gap-8">
           <li
             v-for="pic in gallery"
-            class="h-32 w-32 overflow-hidden xl:h-60 xl:w-60"
+            class="h-32 w-32 overflow-hidden xl:h-64 xl:w-64"
           >
             <NuxtImg
               :src="pic"
