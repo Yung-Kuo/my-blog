@@ -53,8 +53,8 @@ function handleWheelEvent(event) {
   else {
     // body at the top, prevent scrolling
     if (root.classList.contains("overflow-y-scroll")) {
-      root.classList.add("overflow-y-hidden");
-      root.classList.remove("overflow-y-scroll");
+      // root.classList.add("overflow-y-hidden");
+      // root.classList.remove("overflow-y-scroll");
       html.classList.add("overflow-hidden");
     }
     // expand or collapse header
@@ -64,24 +64,29 @@ function handleWheelEvent(event) {
   }
 
   if (header.style.height === `${0 * rem}px`) {
-    root.classList.add("overflow-y-scroll");
-    root.classList.remove("overflow-y-hidden");
-    html.classList.remove("overflow-hidden");
+    // root.classList.add("overflow-y-scroll");
+    // root.classList.remove("overflow-y-hidden");
+    // html.classList.remove("overflow-hidden");
+    html.style.overflowY = "auto";
   } else if (header.style.height === `${36 * rem}px`) {
-    root.classList.add("overflow-y-hidden");
-    root.classList.remove("overflow-y-scroll");
-    html.classList.add("overflow-hidden");
+    // root.classList.add("overflow-y-hidden");
+    // root.classList.remove("overflow-y-scroll");
+    // html.classList.add("overflow-hidden");
+    html.style.overflowY = "hidden";
   }
 }
 </script>
 <template>
-  <div
-    id="root"
-    class="w-full bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
-    @wheel="handleWheelEvent($event)"
-  >
-    <LayoutHeader class="sticky top-0" />
-    <slot />
+  <div>
+    <GadgetLightSwitch />
+    <div
+      id="root"
+      class="w-full bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
+      @wheel="handleWheelEvent($event)"
+    >
+      <LayoutHeader class="sticky top-0" />
+      <slot />
+    </div>
   </div>
 </template>
 

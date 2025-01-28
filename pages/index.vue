@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  layout: "home",
+  layout: "scroll",
 });
 
 const supabase = useSupabaseClient();
@@ -33,7 +33,7 @@ const gallery = ref([]);
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-36 px-8 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
+    class="flex flex-col items-center gap-36 px-6 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
   >
     <!-- Projects -->
     <div class="flex w-full flex-col">

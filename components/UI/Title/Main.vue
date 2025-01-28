@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 <template>
   <div
-    class="flex w-full text-4xl text-neutral-800 transition-all dark:text-neutral-300 xl:text-6xl"
+    class="flex w-max text-4xl text-neutral-800 transition-all dark:text-neutral-300 xl:text-6xl"
     :class="{
       'cursor-pointer hover:scale-105 hover:text-neutral-900 active:scale-100 dark:hover:text-neutral-200':
         !props.noHover,
