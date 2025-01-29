@@ -50,19 +50,17 @@ const gallery = ref([]);
       </div>
     </div>
     <!-- Resume -->
-    <div class="flex w-full justify-center">
-      <NuxtLink
-        to="/resume"
-        class="group flex grow cursor-pointer justify-center bg-neutral-400 bg-opacity-50 py-10 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 xl:grow-0 xl:rounded-md xl:px-36 xl:py-10"
-      >
-        <div>
-          <UITitleAlt
-            class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-yellow-400 dark:group-hover:text-yellow-400"
-            >Resume</UITitleAlt
-          >
-        </div>
-      </NuxtLink>
-    </div>
+    <NuxtLink
+      to="/resume"
+      class="group flex cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 px-20 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 xl:px-36 xl:py-10"
+    >
+      <div>
+        <UITitleAlt
+          class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-yellow-400 dark:group-hover:text-yellow-400"
+          >Resume</UITitleAlt
+        >
+      </div>
+    </NuxtLink>
 
     <!-- Gallery -->
     <div class="flex flex-col gap-6">

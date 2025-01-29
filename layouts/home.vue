@@ -76,7 +76,7 @@ function handleWheelEvent(event) {
     <GadgetLightSwitch />
     <div
       id="root"
-      class="h-screen w-full overflow-y-hidden bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
+      class="h-screen w-full overflow-y-scroll bg-neutral-200 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
       @wheel="handleWheelEvent($event)"
     >
       <LayoutHeader />
@@ -84,6 +84,17 @@ function handleWheelEvent(event) {
     </div>
   </div>
 </template>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
 
 <!-- <style scoped>
 html {
