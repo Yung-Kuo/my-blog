@@ -16,7 +16,7 @@ const isExpand = ref(true);
       <slot name="title" :isExpand="isExpand" />
     </div>
     <div class="h-4 xl:h-10" />
-    <div class="min-h-20 w-max max-w-full">
+    <div class="min-h-20 w-max max-w-full overflow-hidden">
       <Transition
         enter-active-class="transition-all duration-500"
         enter-from-class="opacity-0 max-h-0"

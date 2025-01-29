@@ -25,7 +25,7 @@
             <UITitleSub noHover>Programming<br />Languages</UITitleSub>
             <div class="h-4" />
             <ul>
-              <UITitleList>• JavaScript</UITitleList>
+              <UITitleList>JavaScript</UITitleList>
             </ul>
           </div>
           <div
@@ -34,10 +34,10 @@
             <UITitleSub noHover>Technologies</UITitleSub>
             <div class="h-4" />
             <ul>
-              <UITitleList>• Nuxt.js</UITitleList>
-              <UITitleList>• Tailwind</UITitleList>
-              <UITitleList>• Supabase</UITitleList>
-              <UITitleList>• Pinia</UITitleList>
+              <UITitleList>Nuxt.js</UITitleList>
+              <UITitleList>Tailwind</UITitleList>
+              <UITitleList>Supabase</UITitleList>
+              <UITitleList>Pinia</UITitleList>
             </ul>
           </div>
           <div
@@ -46,38 +46,62 @@
             <UITitleSub noHover>Tools</UITitleSub>
             <div class="h-4" />
             <ul>
-              <UITitleList>• VSCode, Cursor, Zed</UITitleList>
-              <UITitleList>• Vercel</UITitleList>
+              <UITitleList>VSCode, Cursor, Zed</UITitleList>
+              <UITitleList>Vercel</UITitleList>
             </ul>
           </div>
         </div>
       </template>
     </UISection>
     <!--  -->
-    <div class="flex flex-wrap gap-10 xl:gap-0">
-      <!-- Projects -->
-      <UISection expand class="max-w-screen-md xl:w-1/2 2xl:w-1/3">
-        <template #title="titleProps">
-          <UITitleMain expand :isExpand="titleProps.isExpand"
-            >Projects</UITitleMain
-          >
-        </template>
-        <template #sub>
+    <!-- <div class="flex flex-wrap gap-10 xl:gap-0"> -->
+    <!-- Projects -->
+    <UISection expand>
+      <template #title="titleProps">
+        <UITitleMain expand :isExpand="titleProps.isExpand"
+          >Projects</UITitleMain
+        >
+      </template>
+      <template #content>
+        <div class="flex w-full flex-col gap-10 md:flex-row md:gap-20 md:pr-20">
           <ProjectsTwitterClone />
-        </template>
-      </UISection>
-      <!-- Experience -->
-      <UISection expand class="max-w-full xl:w-1/2 2xl:w-1/3">
-        <template #title="titleProps">
-          <UITitleMain expand :isExpand="titleProps.isExpand"
-            >Experience</UITitleMain
-          >
-        </template>
-        <template #sub>
-          <UITitleSub noHover>Wow, such empty</UITitleSub>
-        </template>
-      </UISection>
-    </div>
+          <ul>
+            <UITitleList
+              >Developed a social media application using Nuxt.js for frontend
+              development.</UITitleList
+            >
+            <UITitleList
+              >Implemented responsive styling with Tailwind CSS to ensure a
+              consistent user experience across devices.</UITitleList
+            >
+            <UITitleList
+              >Integrated Supabase for backend services, including user
+              authentication with OAuth.</UITitleList
+            >
+            <UITitleList
+              >Utilized Pinia for state management to improve application
+              performance and user experience.</UITitleList
+            >
+            <UITitleList
+              >Used Git for version control and learned basic Git
+              commands.</UITitleList
+            >
+          </ul>
+        </div>
+      </template>
+    </UISection>
+    <!-- Experience -->
+    <UISection expand>
+      <template #title="titleProps">
+        <UITitleMain expand :isExpand="titleProps.isExpand"
+          >Experience</UITitleMain
+        >
+      </template>
+      <template #sub>
+        <UITitleSub noHover>Wow, such empty</UITitleSub>
+      </template>
+    </UISection>
+    <!-- </div> -->
     <!--  -->
     <UISection>
       <template #title>
