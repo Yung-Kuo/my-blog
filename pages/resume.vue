@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <!--  -->
-  <div class="flex flex-col gap-16 p-10 py-20 xl:gap-24 xl:p-20 xl:pb-40">
+  <div class="flex flex-col gap-16 px-6 py-24 xl:gap-24 xl:px-20 xl:py-40">
     <UISection>
       <template #title>
         <UITitleMain noHover>Contact Info</UITitleMain>

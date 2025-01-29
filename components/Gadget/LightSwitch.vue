@@ -2,20 +2,33 @@
 const isDark = ref(false);
 onMounted(() => {
   isDark.value =
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
+    localStorage.currentTheme === "dark" ||
+    (!("currentTheme" in localStorage) &&
       window.matchMedia("(prefers-color-scheme: dark)").matches);
-  if (isDark.value) {
-    document.documentElement.classList.add("dark");
-  }
+
+  watchEffect(() => {
+    if (isDark.value) {
+      document.documentElement.style.backgroundColor = "#000000";
+      document.documentElement.classList.add("dark");
+      localStorage.currentTheme = "dark";
+    } else {
+      document.documentElement.style.backgroundColor = "#ffffff";
+      document.documentElement.classList.remove("dark");
+      localStorage.currentTheme = "light";
+    }
+  });
 });
 function toggleDark() {
   isDark.value = !isDark.value;
-  if (isDark.value) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
+  // if (isDark.value) {
+  //   document.documentElement.backgroundColor = "#000000";
+  //   document.documentElement.classList.add("dark");
+  //   localStorage.currentTheme = "dark";
+  // } else {
+  //   document.documentEleement.backgroundColor = "#ffffff";
+  //   document.documentElement.classList.remove("dark");
+  //   localStorage.currentTheme = "light";
+  // }
   // document.documentElement.classList.toggle("dark");
 }
 </script>
