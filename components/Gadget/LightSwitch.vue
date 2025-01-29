@@ -8,11 +8,11 @@ onMounted(() => {
 
   watchEffect(() => {
     if (isDark.value) {
-      document.documentElement.style.backgroundColor = "#000000";
+      document.documentElement.style.backgroundColor = "#171717";
       document.documentElement.classList.add("dark");
       localStorage.currentTheme = "dark";
     } else {
-      document.documentElement.style.backgroundColor = "#ffffff";
+      document.documentElement.style.backgroundColor = "#E5E5E5";
       document.documentElement.classList.remove("dark");
       localStorage.currentTheme = "light";
     }
