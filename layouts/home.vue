@@ -51,9 +51,9 @@ function handleWheelEvent(event) {
   // in the middle
   else {
     // body at the top, prevent scrolling
-    if (root.classList.contains("overflow-y-scroll")) {
-      html.classList.add("overflow-hidden");
-    }
+    // if (root.classList.contains("overflow-y-scroll")) {
+    //   html.classList.add("overflow-hidden");
+    // }
     // expand or collapse header
     header.style.height = `${rect.height - event.deltaY}px`;
     // logo padding
@@ -61,13 +61,13 @@ function handleWheelEvent(event) {
   }
 
   if (header.style.height === `${0 * rem}px`) {
-    html.style.overflowY = "auto";
-    // root.classList.add("overflow-y-scroll");
-    // root.classList.remove("overflow-y-hidden");
+    // html.style.overflowY = "auto";
+    root.classList.add("overflow-y-scroll");
+    root.classList.remove("overflow-y-hidden");
   } else if (header.style.height === `${36 * rem}px`) {
-    html.style.overflowY = "hidden";
-    // root.classList.add("overflow-y-hidden");
-    // root.classList.remove("overflow-y-scroll");
+    // html.style.overflowY = "hidden";
+    root.classList.add("overflow-y-hidden");
+    root.classList.remove("overflow-y-scroll");
   }
 }
 </script>
@@ -76,7 +76,7 @@ function handleWheelEvent(event) {
     <GadgetLightSwitch />
     <div
       id="root"
-      class="w-full bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
+      class="h-screen w-full overflow-y-hidden bg-neutral-200 transition-all duration-300 dark:bg-neutral-900"
       @wheel="handleWheelEvent($event)"
     >
       <LayoutHeader />
@@ -85,8 +85,8 @@ function handleWheelEvent(event) {
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 html {
   overflow: hidden;
 }
-</style>
+</style> -->
