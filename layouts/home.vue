@@ -62,12 +62,12 @@ function handleWheelEvent(event) {
 
   if (header.style.height === `${0 * rem}px`) {
     // html.style.overflowY = "auto";
-    root.classList.add("overflow-y-scroll");
-    root.classList.remove("overflow-y-hidden");
+    // root.classList.add("overflow-y-scroll");
+    root.classList.remove("xl:overflow-y-hidden");
   } else if (header.style.height === `${36 * rem}px`) {
     // html.style.overflowY = "hidden";
-    root.classList.add("overflow-y-hidden");
-    root.classList.remove("overflow-y-scroll");
+    root.classList.add("xl:overflow-y-hidden");
+    // root.classList.remove("overflow-y-scroll");
   }
 }
 </script>

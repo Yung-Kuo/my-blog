@@ -10,6 +10,13 @@
         <UITitleSub noHover>Yung Kuo</UITitleSub>
         <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
         <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
+        <br />
+        <UITitleSub
+          noHover
+          class="border-l-8 border-neutral-400 px-4 py-2 dark:border-neutral-600"
+          >Yung is a frontend developer with experience building a Twitter clone
+          using Nuxt.js, Tailwind, and Supabase.</UITitleSub
+        >
       </template>
     </UISection>
     <!--  -->
