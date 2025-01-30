@@ -2,7 +2,7 @@
 <template>
   <header
     id="header"
-    class="group sticky left-0 top-0 z-20 w-full xl:h-[36rem]"
+    class="group sticky left-0 top-0 z-20 hidden w-full xl:flex xl:h-[36rem]"
   >
     <!-- light mode -->
     <div

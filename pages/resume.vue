@@ -78,8 +78,13 @@
               development.</UITitleList
             >
             <UITitleList
-              >Implemented responsive styling with Tailwind CSS to ensure a
-              consistent user experience across devices.</UITitleList
+              >Implemented core social media functionalities such as posting,
+              replying, retweeting, liking, and bookmarking tweets.</UITitleList
+            >
+            <UITitleList
+              >Styled the application with Tailwind CSS for a responsive and
+              visually appealing user interface across desktop and mobile
+              devices.</UITitleList
             >
             <UITitleList
               >Integrated Supabase for backend services, including user
