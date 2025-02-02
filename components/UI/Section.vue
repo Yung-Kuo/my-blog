@@ -21,7 +21,7 @@ const isExpand = ref(true);
     </div>
     <div v-if="props.compact" class="h-2" />
     <div v-else class="h-4 xl:h-10" />
-    <div class="min-h-20 w-full overflow-hidden">
+    <div class="min-h-20 w-full" :class="{ 'overflow-hidden': props.expand }">
       <Transition
         enter-active-class="transition-all duration-500"
         enter-from-class="opacity-0 max-h-0"
