@@ -72,16 +72,15 @@ function handleWheelEvent(event) {
 }
 </script>
 <template>
-  <div>
+  <div
+    id="root"
+    class="h-screen w-full overflow-y-scroll bg-neutral-200 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
+    @wheel="handleWheelEvent($event)"
+  >
     <GadgetLightSwitch />
-    <div
-      id="root"
-      class="h-screen w-full overflow-y-scroll bg-neutral-200 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
-      @wheel="handleWheelEvent($event)"
-    >
-      <LayoutHeader />
-      <slot />
-    </div>
+    <GadgetResume />
+    <LayoutHeader />
+    <slot />
   </div>
 </template>
 <style>

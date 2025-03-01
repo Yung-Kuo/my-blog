@@ -14,7 +14,7 @@ const props = defineProps({
         !props.noHover,
     }"
   >
-    <h3>
+    <h3 class="flex items-center gap-2">
       <slot />
     </h3>
   </div>

@@ -1,22 +1,22 @@
 <script setup></script>
 <template>
   <!--  -->
-  <div class="flex flex-col gap-16 px-6 py-24 xl:gap-24 xl:px-20 xl:py-40">
+  <div class="flex flex-col gap-20 xl:gap-40">
     <UISection>
       <template #title>
         <UITitleMain noHover>Contact Info</UITitleMain>
       </template>
-      <template #sub>
+      <template #content>
         <UITitleSub noHover>Yung Kuo</UITitleSub>
         <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
         <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
         <br />
-        <UITitleSub
-          noHover
-          class="border-l-8 border-neutral-400 px-4 py-2 dark:border-neutral-600"
-          >Yung is a frontend developer with experience building a Twitter clone
-          using Nuxt.js, Tailwind, and Supabase.</UITitleSub
-        >
+        <UITitleSideFrame>
+          <UITitleSub noHover
+            >Yung is a frontend developer with experience building a Twitter
+            clone using Nuxt.js, Tailwind, and Supabase.</UITitleSub
+          >
+        </UITitleSideFrame>
       </template>
     </UISection>
     <!--  -->
@@ -26,18 +26,14 @@
       </template>
       <template #content>
         <div class="flex flex-wrap gap-10">
-          <div
-            class="min-h-40 min-w-60 border-l-8 border-neutral-400 px-4 py-2 dark:border-neutral-600 xl:min-h-60"
-          >
+          <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
             <UITitleSub noHover>Programming<br />Languages</UITitleSub>
             <div class="h-4" />
             <ul>
               <UITitleList>JavaScript</UITitleList>
             </ul>
-          </div>
-          <div
-            class="min-h-40 min-w-60 border-l-8 border-neutral-400 px-4 py-2 dark:border-neutral-600 xl:min-h-60"
-          >
+          </UITitleSideFrame>
+          <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
             <UITitleSub noHover>Technologies</UITitleSub>
             <div class="h-4" />
             <ul>
@@ -46,17 +42,15 @@
               <UITitleList>Supabase</UITitleList>
               <UITitleList>Pinia</UITitleList>
             </ul>
-          </div>
-          <div
-            class="min-h-40 min-w-60 border-l-8 border-neutral-400 px-4 py-2 dark:border-neutral-600 xl:min-h-60"
-          >
+          </UITitleSideFrame>
+          <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
             <UITitleSub noHover>Tools</UITitleSub>
             <div class="h-4" />
             <ul>
               <UITitleList>VSCode, Cursor, Zed</UITitleList>
               <UITitleList>Vercel</UITitleList>
             </ul>
-          </div>
+          </UITitleSideFrame>
         </div>
       </template>
     </UISection>
@@ -70,7 +64,9 @@
         >
       </template>
       <template #content>
-        <div class="flex w-full flex-col gap-10 md:flex-row md:gap-20 md:pr-20">
+        <div
+          class="flex w-full flex-col items-center gap-10 md:flex-row md:gap-20 md:pr-20"
+        >
           <ProjectsTwitterClone />
           <ul>
             <UITitleList
@@ -95,8 +91,12 @@
               performance and user experience.</UITitleList
             >
             <UITitleList
-              >Used Git for version control and learned basic Git
-              commands.</UITitleList
+              >Used Git for version control, branching for feature development,
+              and pushing updates to the GitHub repository.</UITitleList
+            >
+            <UITitleList
+              >Deployed the project on Vercel for reliable hosting and
+              streamlined deployment processes.</UITitleList
             >
           </ul>
         </div>
@@ -113,11 +113,12 @@
         <UITitleSub noHover>Wow, such empty</UITitleSub>
       </template>
     </UISection>
-    <!-- </div> -->
     <!--  -->
-    <UISection>
-      <template #title>
-        <UITitleMain noHover>Education</UITitleMain>
+    <UISection expand>
+      <template #title="titleProps">
+        <UITitleMain expand :isExpand="titleProps.isExpand"
+          >Education</UITitleMain
+        >
       </template>
       <template #sub>
         <UITitleSub noHover>B.S. Information Management, 2021</UITitleSub>

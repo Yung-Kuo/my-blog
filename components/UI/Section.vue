@@ -19,25 +19,31 @@ const isExpand = ref(true);
     >
       <slot name="title" :isExpand="isExpand" />
     </div>
-    <div v-if="props.compact" class="h-2" />
-    <div v-else class="h-4 xl:h-10" />
-    <div class="min-h-20 w-full" :class="{ 'overflow-hidden': props.expand }">
+    <div class="min-h-20 w-full">
       <Transition
-        enter-active-class="transition-all duration-500"
+        enter-active-class="transition-all duration-500 overflow-y-hidden"
         enter-from-class="opacity-0 max-h-0"
         enter-to-class="opacity-100 max-h-screen"
-        leave-active-class="transition-all duration-500"
+        leave-active-class="transition-all duration-500 overflow-y-hidden"
         leave-from-class="opacity-100 max-h-screen"
         leave-to-class="opacity-0 max-h-0"
       >
         <div v-show="!props.expand || isExpand">
+          <!-- gap -->
+          <div v-if="props.compact" class="h-2" />
+          <div v-else-if="$slots.title && $slots.sub" class="h-4 xl:h-10" />
+          <div v-else-if="$slots.title && $slots.content" class="h-8 xl:h-20" />
+          <!-- subtitle -->
           <div class="w-full">
             <slot name="sub" />
           </div>
+          <!-- gap -->
           <div v-if="$slots.content && $slots.sub">
             <div v-if="props.compact" class="h-10 xl:h-16" />
+            <div v-else-if="!$slots.title && $slots.sub" class="h-4 xl:h-10" />
             <div v-else class="h-12 xl:h-20" />
           </div>
+          <!-- content -->
           <div class="w-full">
             <slot name="content" />
           </div>

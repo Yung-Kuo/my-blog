@@ -33,7 +33,7 @@ const gallery = ref([]);
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-36 px-6 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-60 xl:px-20"
+    class="flex flex-col items-center gap-36 px-6 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-48 xl:px-20"
   >
     <!-- Projects -->
     <UISection compact>
@@ -56,10 +56,10 @@ const gallery = ref([]);
     <!-- Resume -->
     <UISection>
       <template #content>
-        <div class="flex w-full justify-center p-5">
+        <div class="flex w-full justify-center">
           <NuxtLink to="/resume">
             <div
-              class="group flex cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 px-20 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 xl:px-36 xl:py-10"
+              class="group flex w-64 cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 lg:w-80 xl:py-10"
             >
               <UITitleAlt
                 class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"
@@ -81,15 +81,8 @@ const gallery = ref([]);
       </template>
       <template #content>
         <ul class="flex w-full flex-wrap gap-2 xl:gap-8">
-          <li
-            v-for="pic in gallery"
-            class="h-40 w-40 overflow-hidden xl:h-64 xl:w-64"
-          >
-            <NuxtImg
-              :src="pic"
-              class="h-full w-full object-cover transition-all duration-500 hover:scale-110"
-              loading="lazy"
-            />
+          <li v-for="pic in gallery">
+            <UIImageZoom :src="pic" class="h-40 w-40 xl:h-64 xl:w-64" />
           </li>
         </ul>
       </template>
