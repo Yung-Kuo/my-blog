@@ -27,6 +27,7 @@ const imageUrls = ref({});
 </script>
 <template>
   <div class="flex flex-col gap-20 xl:gap-40">
+    <GadgetNotFinished />
     <!-- Introduction -->
     <UISection expand>
       <template #title="titleProps">
@@ -34,7 +35,17 @@ const imageUrls = ref({});
           >1. Introduction</UITitleMain
         >
       </template>
-      <template #content></template>
+      <template #content>
+        <UITitleSub noHover
+          >Inspired by the conversations surrounding Twitter's acquisition and
+          Meta's Threads, I decided to build a Twitter clone as a learning
+          project. This was my first major Nuxt application, and I used it to
+          solidify my understanding of modern front-end frameworks and
+          component-based development. I built the clone using Nuxt, Tailwind
+          CSS for styling, Supabase as backend, Pinia for state management, and
+          deployed it on Vercel.</UITitleSub
+        >
+      </template>
     </UISection>
     <!-- Planning and Design -->
     <UISection expand>
