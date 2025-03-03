@@ -14,7 +14,7 @@ const isExpand = ref(true);
 <template>
   <div class="flex w-full flex-col">
     <div
-      class="w-max"
+      class="w-max max-w-full"
       @mousedown="props.expand ? (isExpand = !isExpand) : null"
     >
       <slot name="title" :isExpand="isExpand" />

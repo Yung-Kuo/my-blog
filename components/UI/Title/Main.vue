@@ -16,14 +16,14 @@ const props = defineProps({
 </script>
 <template>
   <div
-    class="flex w-max text-4xl font-medium text-neutral-800 transition-all dark:text-neutral-300 xl:text-6xl"
+    class="flex max-w-full text-4xl font-medium text-neutral-800 transition-all dark:text-neutral-300 xl:text-6xl"
     :class="{
       'cursor-pointer hover:scale-105 hover:text-neutral-900 active:scale-100 dark:hover:text-neutral-200':
         !props.noHover,
       'group flex cursor-pointer gap-2': props.expand,
     }"
   >
-    <h1>
+    <h1 class="">
       <slot />
     </h1>
 
