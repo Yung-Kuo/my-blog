@@ -6,7 +6,7 @@
     <GadgetLightSwitch />
     <div
       id="root"
-      class="w-full bg-neutral-200 px-6 py-24 transition-all duration-300 dark:bg-neutral-900 xl:px-20 xl:py-40"
+      class="w-full bg-neutral-100 px-6 py-24 transition-all duration-300 dark:bg-neutral-900 xl:px-20 xl:py-40"
     >
       <slot />
     </div>

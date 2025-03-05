@@ -48,7 +48,7 @@ const gallery = ref([]);
       </template>
       <!-- project links -->
       <template #content>
-        <div class="flex justify-center gap-10">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <ProjectsTwitterClone />
         </div>
       </template>
@@ -82,7 +82,10 @@ const gallery = ref([]);
       <template #content>
         <ul class="flex w-full flex-wrap gap-2 xl:gap-8">
           <li v-for="pic in gallery">
-            <UIImageZoom :src="pic" class="h-40 w-40 xl:h-64 xl:w-64" />
+            <UIImageZoom
+              :src="pic"
+              class="h-40 w-40 rounded-sm xl:h-64 xl:w-64"
+            />
           </li>
         </ul>
       </template>

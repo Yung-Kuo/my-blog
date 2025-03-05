@@ -65,7 +65,7 @@
       </template>
       <template #content>
         <div
-          class="flex w-full flex-col items-center gap-10 md:flex-row md:gap-20 md:pr-20"
+          class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
         >
           <ProjectsTwitterClone />
           <ul>

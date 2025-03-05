@@ -29,70 +29,72 @@ const imageUrls = ref({});
   <div class="flex flex-col gap-20 xl:gap-40">
     <GadgetNotFinished />
     <!-- Introduction -->
-    <UISection expand>
-      <template #title="titleProps">
-        <UITitleMain expand :isExpand="titleProps.isExpand"
-          >1. Introduction</UITitleMain
+
+    <!-- twitter-clone logo -->
+    <div class="flex w-full justify-center">
+      <div class="grid grid-cols-1 grid-rows-1">
+        <h1
+          class="z-20 col-start-1 row-start-1 text-5xl font-bold text-gray-400 transition-all sm:text-6xl"
         >
-      </template>
+          twitter-clone
+        </h1>
+        <h1
+          class="z-10 col-start-1 row-start-1 translate-x-1 translate-y-1 text-5xl font-bold text-gray-600 transition-all sm:text-6xl"
+        >
+          twitter-clone
+        </h1>
+        <h1
+          class="col-start-1 row-start-1 translate-x-2 translate-y-2 text-5xl font-bold text-gray-700 transition-all sm:text-6xl"
+        >
+          twitter-clone
+        </h1>
+      </div>
+    </div>
+
+    <NuxtImg :src="imageUrls?.['twitter_clone']" />
+    <UISection>
+      <!-- <template #title>
+        <UITitleMain>1. Introduction</UITitleMain>
+      </template> -->
       <template #content>
         <UITitleSub noHover
           >Inspired by the conversations surrounding Twitter's acquisition and
           Meta's Threads, I decided to build a Twitter clone as a learning
           project. This was my first major Nuxt application, and I used it to
           solidify my understanding of modern front-end frameworks and
-          component-based development. I built the clone using Nuxt, Tailwind
-          CSS for styling, Supabase as backend, Pinia for state management, and
-          deployed it on Vercel.</UITitleSub
+          component-based development. I built the clone using Nuxt.js as ,
+          Tailwind CSS for styling, Supabase as backend, Pinia for state
+          management, and Vercel for deployment.</UITitleSub
+        >
+        <br />
+        <br />
+        <UITitleSub noHover
+          >Link to the project:<NuxtLink
+            to="https://twitter-clone-rho-smoky.vercel.app"
+            class="underline decoration-yellow-500"
+            >https://twitter-clone-rho-smoky.vercel.app</NuxtLink
+          ></UITitleSub
         >
       </template>
     </UISection>
     <!-- Planning and Design -->
     <UISection expand>
-      <template #title="titleProps">
-        <UITitleMain expand :isExpand="titleProps.isExpand"
-          >2. Planning and Design</UITitleMain
-        >
-      </template>
       <template #content>
         <UISection>
-          <template #sub>
-            <UITitleSub>Sign Up / Log In</UITitleSub>
-          </template>
           <template #content>
-            <div class="flex flex-shrink gap-5">
-              <div>
-                <UIImageZoom :src="imageUrls?.['OAuth_Login']" />
-              </div>
-              <div>
-                <UIImageZoom :src="imageUrls?.['Password_Login']" />
-              </div>
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+              <NuxtImg :src="imageUrls?.['OAuth_Login']" />
+              <NuxtImg :src="imageUrls?.['SmallScreen_Layout']" />
+              <NuxtImg :src="imageUrls?.['quote_layers']" />
+              <NuxtImg :src="imageUrls?.['SmallScreen_SidePanel']" />
+              <NuxtImg :src="imageUrls?.['profile']" />
+              <NuxtImg :src="imageUrls?.['reply_thread']" />
+              <NuxtImg :src="imageUrls?.['reply']" />
+              <NuxtImg :src="imageUrls?.['quote']" />
             </div>
           </template>
         </UISection>
-        <UITitleSub>Main Layout</UITitleSub>
-        <UITitleSub>Reply Thread</UITitleSub>
-        <UITitleSub>Functionalities</UITitleSub>
-        <UITitleSub>Different Layout for Small Screen</UITitleSub>
       </template>
-    </UISection>
-    <!-- Build the Functionality -->
-    <UISection expand>
-      <template #title="titleProps">
-        <UITitleMain expand :isExpand="titleProps.isExpand"
-          >3. Build the Functionality</UITitleMain
-        >
-      </template>
-      <template #content>
-        <UITitleSub>Component Architecture</UITitleSub>
-        <UITitleSub>Data Handling</UITitleSub>
-      </template>
-    </UISection>
-    <UISection expand>
-      <template #title="titleProps">
-        <UITitleMain expand :isExpand="titleProps.isExpand">4. UX</UITitleMain>
-      </template>
-      <template #content></template>
     </UISection>
   </div>
 </template>

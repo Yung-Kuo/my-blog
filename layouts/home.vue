@@ -74,7 +74,7 @@ function handleWheelEvent(event) {
 <template>
   <div
     id="root"
-    class="h-screen w-full overflow-y-scroll bg-neutral-200 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
+    class="h-screen w-full overflow-y-scroll bg-neutral-100 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
     @wheel="handleWheelEvent($event)"
   >
     <GadgetLightSwitch />
