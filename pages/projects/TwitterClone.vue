@@ -68,13 +68,17 @@ const imageUrls = ref({});
         >
         <br />
         <br />
-        <UITitleSub noHover
-          >Link to the project:<NuxtLink
+        <div class="md:flex md:gap-2">
+          <UITitleSub noHover>Link to the project:</UITitleSub>
+          <NuxtLink
             to="https://twitter-clone-rho-smoky.vercel.app"
             class="underline decoration-yellow-500"
-            >https://twitter-clone-rho-smoky.vercel.app</NuxtLink
-          ></UITitleSub
-        >
+          >
+            <UITitleSub noHover>
+              https://twitter-clone-rho-smoky.vercel.app
+            </UITitleSub>
+          </NuxtLink>
+        </div>
       </template>
     </UISection>
     <!-- Planning and Design -->

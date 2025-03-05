@@ -18,12 +18,12 @@ const twitterClone = ref("");
     <div class="w-full">
       <NuxtLink to="/projects/TwitterClone">
         <div
-          class="group text-3xl text-neutral-700 transition-all dark:text-neutral-300"
+          class="group text-2xl text-neutral-700 transition-all dark:text-neutral-300 xl:text-3xl"
         >
           Twitter Clone
           <span
-            class="text-neutral-500 opacity-0 transition-all group-hover:opacity-100 dark:text-neutral-500"
-            >Social platform replica</span
+            class="text-neutral-500 transition-all group-hover:opacity-100 dark:text-neutral-500 xl:opacity-0"
+            >Social platform with adaptive web design</span
           >
         </div>
       </NuxtLink>
