@@ -10,7 +10,7 @@ const twitterClone = ref("");
 </script>
 <template>
   <div class="flex w-full flex-col items-center gap-4">
-    <NuxtLink to="https://twitter-clone-rho-smoky.vercel.app/" target="_blank">
+    <NuxtLink to="/projects/TwitterClone">
       <UIImageZoom :src="twitterClone" class="h-auto w-full">
         <template #text>Go to project</template>
       </UIImageZoom>

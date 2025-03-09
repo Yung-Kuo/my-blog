@@ -27,28 +27,17 @@ const imageUrls = ref({});
 </script>
 <template>
   <div class="flex flex-col gap-20 xl:gap-40">
-    <GadgetNotFinished />
     <!-- Introduction -->
 
     <!-- twitter-clone logo -->
-    <div class="flex w-full justify-center">
-      <div class="grid grid-cols-1 grid-rows-1">
-        <h1
-          class="z-20 col-start-1 row-start-1 text-5xl font-bold text-gray-400 transition-all sm:text-6xl"
-        >
-          twitter-clone
-        </h1>
-        <h1
-          class="z-10 col-start-1 row-start-1 translate-x-1 translate-y-1 text-5xl font-bold text-gray-600 transition-all sm:text-6xl"
-        >
-          twitter-clone
-        </h1>
-        <h1
-          class="col-start-1 row-start-1 translate-x-2 translate-y-2 text-5xl font-bold text-gray-700 transition-all sm:text-6xl"
-        >
-          twitter-clone
-        </h1>
-      </div>
+    <div class="flex justify-center">
+      <NuxtLink
+        to="https://twitter-clone-rho-smoky.vercel.app/"
+        target="_blank"
+        class="w-max border-b-4 border-transparent pb-2 hover:border-gray-400"
+      >
+        <LogoTwitterClone />
+      </NuxtLink>
     </div>
 
     <NuxtImg :src="imageUrls?.['twitter_clone']" />
