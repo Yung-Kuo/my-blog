@@ -59,7 +59,7 @@ const gallery = ref([]);
         <div class="flex w-full justify-center">
           <NuxtLink to="/resume">
             <div
-              class="group flex w-64 cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 py-8 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 lg:w-80 xl:py-10"
+              class="group flex w-60 cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 py-6 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 lg:w-80 xl:py-10"
             >
               <UITitleAlt
                 class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"
