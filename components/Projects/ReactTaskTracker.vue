@@ -3,14 +3,14 @@ const supabase = useSupabaseClient();
 onMounted(async () => {
   const { data } = await supabase.storage
     .from("images")
-    .getPublicUrl("projects/twitter-clone/twitter_clone.webp");
+    .getPublicUrl("projects/react-task-tracker/react-task-tracker.webp");
   image.value = data.publicUrl;
 });
 const image = ref("");
 </script>
 <template>
   <ProjectsTemplate :img-src="image">
-    <template #name>Twitter Clone </template>
-    <template #description>Social platform with adaptive web design</template>
+    <template #name>Task Tracker </template>
+    <template #description>A simple todo list app</template>
   </ProjectsTemplate>
 </template>

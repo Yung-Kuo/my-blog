@@ -64,41 +64,65 @@
         >
       </template>
       <template #content>
-        <div
-          class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
-        >
-          <ProjectsTwitterClone />
-          <ul>
-            <UITitleList
-              >Developed a social media application using Nuxt.js for frontend
-              development.</UITitleList
-            >
-            <UITitleList
-              >Implemented core social media functionalities such as posting,
-              replying, retweeting, liking, and bookmarking tweets.</UITitleList
-            >
-            <UITitleList
-              >Styled the application with Tailwind CSS for a responsive and
-              visually appealing user interface across desktop and mobile
-              devices.</UITitleList
-            >
-            <UITitleList
-              >Integrated Supabase for backend services, including user
-              authentication with OAuth.</UITitleList
-            >
-            <UITitleList
-              >Utilized Pinia for state management to improve application
-              performance and user experience.</UITitleList
-            >
-            <UITitleList
-              >Used Git for version control, branching for feature development,
-              and pushing updates to the GitHub repository.</UITitleList
-            >
-            <UITitleList
-              >Deployed the project on Vercel for reliable hosting and
-              streamlined deployment processes.</UITitleList
-            >
-          </ul>
+        <div class="flex flex-col gap-20">
+          <!-- twitter-clone -->
+          <div
+            class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
+          >
+            <ProjectsTwitterClone />
+            <ul>
+              <UITitleList
+                >Developed a social media application using Nuxt.js for frontend
+                development.</UITitleList
+              >
+              <UITitleList
+                >Implemented core social media functionalities such as posting,
+                replying, retweeting, liking, and bookmarking
+                tweets.</UITitleList
+              >
+              <UITitleList
+                >Styled the application with Tailwind CSS for a responsive and
+                visually appealing user interface across desktop and mobile
+                devices.</UITitleList
+              >
+              <UITitleList
+                >Integrated Supabase for backend services, including user
+                authentication with OAuth.</UITitleList
+              >
+              <UITitleList
+                >Utilized Pinia for state management to improve application
+                performance and user experience.</UITitleList
+              >
+              <UITitleList
+                >Used Git for version control, branching for feature
+                development, and pushing updates to the GitHub
+                repository.</UITitleList
+              >
+              <UITitleList
+                >Deployed the project on Vercel for reliable hosting and
+                streamlined deployment processes.</UITitleList
+              >
+            </ul>
+          </div>
+          <!-- react-task-tracker -->
+
+          <div
+            class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
+          >
+            <ProjectsReactTaskTracker />
+            <ul>
+              <UITitleList
+                >A simple todo list app built with React.</UITitleList
+              >
+              <UITitleList>Styled with Tailwind CSS.</UITitleList>
+              <UITitleList
+                >Appwrite as backend services. Using Magic URL as user sign in
+                method.</UITitleList
+              >
+              <UITitleList>Git for version control.</UITitleList>
+              <UITitleList>Deployd on Vercel.</UITitleList>
+            </ul>
+          </div>
         </div>
       </template>
     </UISection>

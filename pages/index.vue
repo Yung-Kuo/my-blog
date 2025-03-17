@@ -50,6 +50,7 @@ const gallery = ref([]);
       <template #content>
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <ProjectsTwitterClone />
+          <ProjectsReactTaskTracker />
         </div>
       </template>
     </UISection>

@@ -1,11 +1,13 @@
 <script setup></script>
 <template>
   <div>
-    <div class="fixed right-6 top-6 flex gap-2 lg:gap-6">
+    <div class="fixed top-6 flex w-full justify-between px-6">
       <GadgetHome />
-      <GadgetGithub />
-      <GadgetResume />
-      <GadgetLightSwitch />
+      <div class="flex gap-2 lg:gap-6">
+        <GadgetGithub />
+        <GadgetResume />
+        <GadgetLightSwitch />
+      </div>
     </div>
     <div
       id="root"

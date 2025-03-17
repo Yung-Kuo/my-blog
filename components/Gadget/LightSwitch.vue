@@ -24,7 +24,7 @@ function toggleDark() {
 </script>
 <template>
   <div
-    class="group z-30 flex h-12 w-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neutral-500 text-3xl transition-all dark:bg-neutral-800"
+    class="group relative z-30 flex h-12 w-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neutral-500 text-3xl transition-all dark:bg-neutral-800"
     @mousedown="toggleDark()"
   >
     <div
