@@ -9,7 +9,7 @@ onMounted(async () => {
 const image = ref("");
 </script>
 <template>
-  <ProjectsTemplate :img-src="image">
+  <ProjectsTemplate :imgSrc="image" project="TwitterClone">
     <template #name>Twitter Clone </template>
     <template #description>Social platform with adaptive web design</template>
   </ProjectsTemplate>

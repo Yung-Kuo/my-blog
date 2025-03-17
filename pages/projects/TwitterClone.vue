@@ -11,7 +11,7 @@ onMounted(async () => {
   }
 
   for (const image of data) {
-    const { data: publicUrl } = await supabase.storage
+    const { data: publicUrl } = supabase.storage
       .from("images")
       .getPublicUrl(`projects/twitter-clone/${image.name}`);
 
@@ -27,8 +27,6 @@ const imageUrls = ref({});
 </script>
 <template>
   <div class="flex flex-col gap-20 xl:gap-40">
-    <!-- Introduction -->
-
     <!-- twitter-clone logo -->
     <div class="flex justify-center">
       <NuxtLink
@@ -39,12 +37,10 @@ const imageUrls = ref({});
         <LogoTwitterClone />
       </NuxtLink>
     </div>
-
+    <!-- main image -->
     <NuxtImg :src="imageUrls?.['twitter_clone']" />
+    <!-- intro -->
     <UISection>
-      <!-- <template #title>
-        <UITitleMain>1. Introduction</UITitleMain>
-      </template> -->
       <template #content>
         <UITitleSub noHover
           >Inspired by the conversations surrounding Twitter's acquisition and
@@ -70,23 +66,19 @@ const imageUrls = ref({});
         </div>
       </template>
     </UISection>
-    <!-- Planning and Design -->
+    <!-- functionality showcase -->
     <UISection expand>
       <template #content>
-        <UISection>
-          <template #content>
-            <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
-              <NuxtImg :src="imageUrls?.['OAuth_Login']" />
-              <NuxtImg :src="imageUrls?.['SmallScreen_Layout']" />
-              <NuxtImg :src="imageUrls?.['quote_layers']" />
-              <NuxtImg :src="imageUrls?.['SmallScreen_SidePanel']" />
-              <NuxtImg :src="imageUrls?.['profile']" />
-              <NuxtImg :src="imageUrls?.['reply_thread']" />
-              <NuxtImg :src="imageUrls?.['reply']" />
-              <NuxtImg :src="imageUrls?.['quote']" />
-            </div>
-          </template>
-        </UISection>
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+          <NuxtImg :src="imageUrls?.['OAuth_Login']" />
+          <NuxtImg :src="imageUrls?.['SmallScreen_Layout']" />
+          <NuxtImg :src="imageUrls?.['quote_layers']" />
+          <NuxtImg :src="imageUrls?.['SmallScreen_SidePanel']" />
+          <NuxtImg :src="imageUrls?.['profile']" />
+          <NuxtImg :src="imageUrls?.['reply_thread']" />
+          <NuxtImg :src="imageUrls?.['reply']" />
+          <NuxtImg :src="imageUrls?.['quote']" />
+        </div>
       </template>
     </UISection>
   </div>

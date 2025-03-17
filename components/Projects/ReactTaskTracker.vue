@@ -9,7 +9,7 @@ onMounted(async () => {
 const image = ref("");
 </script>
 <template>
-  <ProjectsTemplate :img-src="image">
+  <ProjectsTemplate :img-src="image" project="ReactTaskTracker">
     <template #name>Task Tracker </template>
     <template #description>A simple todo list app</template>
   </ProjectsTemplate>

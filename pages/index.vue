@@ -33,7 +33,7 @@ const gallery = ref([]);
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-36 px-6 pb-40 pt-20 text-2xl text-neutral-500 xl:gap-48 xl:px-20"
+    class="flex flex-col items-center gap-36 px-6 py-40 text-2xl text-neutral-500 xl:gap-48 xl:px-20 xl:pt-20"
   >
     <!-- Projects -->
     <UISection compact>
