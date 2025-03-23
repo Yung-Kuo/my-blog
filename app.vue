@@ -15,7 +15,7 @@
   filter: blur(1rem);
 }
 html {
-  background-color: transparent;
+  background-color: white;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

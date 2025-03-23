@@ -1,7 +1,9 @@
 <script setup></script>
 <template>
-  <div>
-    <div class="fixed top-6 flex w-full justify-between px-6">
+  <div
+    class="w-full bg-neutral-100 px-6 py-40 transition-all duration-300 dark:bg-neutral-900 xl:px-20 xl:py-40 xl:pt-24"
+  >
+    <div class="fixed top-6 z-30 flex w-full justify-between px-6">
       <GadgetHome />
       <div class="flex gap-2 lg:gap-6">
         <GadgetGithub />
@@ -9,10 +11,7 @@
         <GadgetLightSwitch />
       </div>
     </div>
-    <div
-      id="root"
-      class="w-full bg-neutral-100 px-6 py-40 transition-all duration-300 dark:bg-neutral-900 xl:px-20 xl:py-40 xl:pt-24"
-    >
+    <div id="root">
       <slot />
     </div>
   </div>

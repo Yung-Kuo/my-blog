@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 <template>
   <div
-    class="group grid grid-cols-1 grid-rows-1 overflow-hidden border-0"
+    class="group relative z-0 grid grid-cols-1 grid-rows-1 overflow-hidden border-0"
     :class="{ 'rounded-md dark:border dark:border-neutral-700': $slots.text }"
   >
     <NuxtImg

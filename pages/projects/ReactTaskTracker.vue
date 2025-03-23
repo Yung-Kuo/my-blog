@@ -66,5 +66,14 @@ const imageUrls = ref({});
       </template>
     </UISection>
     <!-- functionality showcase -->
+    <UISection expand>
+      <template #content>
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+          <UIImageZoom :src="imageUrls?.['small-screen']" />
+          <UIImageZoom :src="imageUrls?.['add-task']" />
+          <UIImageZoom :src="imageUrls?.['view-task']" />
+        </div>
+      </template>
+    </UISection>
   </div>
 </template>

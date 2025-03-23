@@ -97,9 +97,3 @@ function handleWheelEvent(event) {
   filter: blur(1rem);
 }
 </style>
-
-<!-- <style scoped>
-html {
-  overflow: hidden;
-}
-</style> -->
