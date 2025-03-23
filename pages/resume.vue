@@ -31,6 +31,7 @@
             <div class="h-4" />
             <ul>
               <UITitleList>JavaScript</UITitleList>
+              <UITitleList>Python</UITitleList>
             </ul>
           </UITitleSideFrame>
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
@@ -38,8 +39,10 @@
             <div class="h-4" />
             <ul>
               <UITitleList>Nuxt.js</UITitleList>
+              <UITitleList>React.js</UITitleList>
               <UITitleList>Tailwind</UITitleList>
               <UITitleList>Supabase</UITitleList>
+              <UITitleList>Appwrite</UITitleList>
               <UITitleList>Pinia</UITitleList>
             </ul>
           </UITitleSideFrame>
