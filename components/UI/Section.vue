@@ -4,10 +4,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  compact: {
-    type: Boolean,
-    default: false,
-  },
 });
 const isExpand = ref(true);
 </script>
@@ -30,8 +26,7 @@ const isExpand = ref(true);
       >
         <div v-show="!props.expand || isExpand">
           <!-- gap -->
-          <div v-if="props.compact" class="h-2" />
-          <div v-else-if="$slots.title && $slots.sub" class="h-4 xl:h-10" />
+          <div v-if="$slots.title && $slots.sub" class="h-4 xl:h-10" />
           <div v-else-if="$slots.title && $slots.content" class="h-8 xl:h-20" />
           <!-- subtitle -->
           <div class="w-full">
@@ -39,8 +34,7 @@ const isExpand = ref(true);
           </div>
           <!-- gap -->
           <div v-if="$slots.content && $slots.sub">
-            <div v-if="props.compact" class="h-10 xl:h-16" />
-            <div v-else-if="!$slots.title && $slots.sub" class="h-4 xl:h-10" />
+            <div v-if="!$slots.title && $slots.sub" class="h-4 xl:h-10" />
             <div v-else class="h-12 xl:h-20" />
           </div>
           <!-- content -->

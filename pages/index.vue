@@ -36,16 +36,16 @@ const gallery = ref([]);
     class="flex flex-col items-center gap-36 px-6 py-40 text-2xl text-neutral-500 xl:gap-48 xl:px-20 xl:pt-20"
   >
     <!-- Projects -->
-    <UISection compact>
+    <UISection>
       <template #title>
-        <UITitleMain> Projects </UITitleMain>
+        <UITitleMain> Projects /</UITitleMain>
       </template>
       <!-- divider -->
-      <template #sub>
+      <!-- <template #sub>
         <div
           class="w-full border-2 border-neutral-400 transition-all dark:border-neutral-700"
         ></div>
-      </template>
+      </template> -->
       <!-- project links -->
       <template #content>
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
