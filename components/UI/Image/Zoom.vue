@@ -19,7 +19,7 @@ const props = defineProps({
     />
     <div
       v-if="$slots.text"
-      class="z-10 col-start-1 row-start-1 flex h-full w-full items-center justify-center rounded-md bg-neutral-500 bg-opacity-0 transition-all hover:bg-opacity-30 hover:backdrop-blur-sm"
+      class="z-10 col-start-1 row-start-1 flex h-full w-full items-center justify-center rounded-md bg-neutral-800 bg-opacity-0 transition-all hover:bg-opacity-50 hover:backdrop-blur-sm"
       :class="!$slots.text ? 'duration-500' : ''"
     >
       <UITitleAlt
