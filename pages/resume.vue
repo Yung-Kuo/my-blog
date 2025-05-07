@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+useSeoMeta({
+  title: "Yung Kuo's Resume",
+  description: "Check out my resume and projects!",
+});
+</script>
 <template>
   <!--  -->
   <div class="flex flex-col gap-20 xl:gap-40">

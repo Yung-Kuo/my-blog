@@ -1,4 +1,8 @@
 <script setup>
+useSeoMeta({
+  title: "Yung Kuo's Blog",
+  description: "Portfolio & Photography",
+});
 definePageMeta({
   layout: "home",
 });
