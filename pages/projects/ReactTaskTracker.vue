@@ -56,9 +56,9 @@ const imageUrls = ref({});
           <UITitleSub noHover>Link to the project:</UITitleSub>
           <NuxtLink
             to="https://react-task-tracker-rust.vercel.app/"
-            class="underline decoration-yellow-500"
+            class="underline decoration-yellow-500 decoration-2 transition-all hover:decoration-yellow-400"
           >
-            <UITitleSub noHover>
+            <UITitleSub noHover class="hover:!text-white">
               https://react-task-tracker-rust.vercel.app/
             </UITitleSub>
           </NuxtLink>

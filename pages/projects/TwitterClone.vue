@@ -57,9 +57,9 @@ const imageUrls = ref({});
           <UITitleSub noHover>Link to the project:</UITitleSub>
           <NuxtLink
             to="https://twitter-clone-rho-smoky.vercel.app"
-            class="underline decoration-yellow-500"
+            class="underline decoration-yellow-500 decoration-2 transition-all hover:decoration-yellow-400"
           >
-            <UITitleSub noHover>
+            <UITitleSub noHover class="hover:!text-white">
               https://twitter-clone-rho-smoky.vercel.app
             </UITitleSub>
           </NuxtLink>
