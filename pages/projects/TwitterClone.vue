@@ -47,9 +47,9 @@ const imageUrls = ref({});
           Meta's Threads, I decided to build a Twitter clone as a learning
           project. This was my first major Nuxt application, and I used it to
           solidify my understanding of modern front-end frameworks and
-          component-based development. I built the clone using Nuxt.js as ,
-          Tailwind CSS for styling, Supabase as backend, Pinia for state
-          management, and Vercel for deployment.</UITitleSub
+          component-based development. I built the clone using Nuxt.js as the
+          framework, Tailwind CSS for styling, Supabase as backend, Pinia for
+          state management, and Vercel for deployment.</UITitleSub
         >
         <br />
         <br />
