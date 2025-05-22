@@ -48,8 +48,8 @@ const imageUrls = ref({});
           project. This was my first major Nuxt application, and I used it to
           solidify my understanding of modern front-end frameworks and
           component-based development. I built the clone using Nuxt.js as the
-          framework, Tailwind CSS for styling, Supabase as backend, Pinia for
-          state management, and Vercel for deployment.</UITitleSub
+          frontend framework, Tailwind CSS for styling, Supabase as the backend,
+          Pinia for state management, and Vercel for deployment.</UITitleSub
         >
         <br />
         <br />
