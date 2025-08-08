@@ -26,60 +26,33 @@ onMounted(async () => {
 const imageUrls = ref({});
 </script>
 <template>
-  <div class="flex flex-col gap-20 xl:gap-40">
-    <!-- twitter-clone logo -->
-    <div class="flex justify-center">
-      <NuxtLink
-        to="https://twitter-clone-rho-smoky.vercel.app/"
-        target="_blank"
-        class="w-max border-b-4 border-transparent pb-2 hover:border-gray-400"
-      >
-        <LogoTwitterClone />
-      </NuxtLink>
-    </div>
-    <!-- main image -->
-    <NuxtImg :src="imageUrls?.['twitter_clone']" />
-    <!-- intro -->
-    <UISection>
-      <template #content>
-        <UITitleSub noHover
-          >Inspired by the conversations surrounding Twitter's acquisition and
-          Meta's Threads, I decided to build a Twitter clone as a learning
-          project. This was my first major Nuxt application, and I used it to
-          solidify my understanding of modern front-end frameworks and
-          component-based development. I built the clone using Nuxt.js as the
-          frontend framework, Tailwind CSS for styling, Supabase as the backend,
-          Pinia for state management, and Vercel for deployment.</UITitleSub
-        >
-        <br />
-        <br />
-        <div class="md:flex md:gap-2">
-          <UITitleSub noHover>Link to the project:</UITitleSub>
-          <NuxtLink
-            to="https://twitter-clone-rho-smoky.vercel.app"
-            class="underline decoration-yellow-500 decoration-2 transition-all hover:decoration-yellow-400"
-          >
-            <UITitleSub noHover class="hover:!text-white">
-              https://twitter-clone-rho-smoky.vercel.app
-            </UITitleSub>
-          </NuxtLink>
-        </div>
-      </template>
-    </UISection>
-    <!-- functionality showcase -->
-    <UISection expand>
-      <template #content>
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
-          <NuxtImg :src="imageUrls?.['OAuth_Login']" />
-          <NuxtImg :src="imageUrls?.['SmallScreen_Layout']" />
-          <NuxtImg :src="imageUrls?.['quote_layers']" />
-          <NuxtImg :src="imageUrls?.['SmallScreen_SidePanel']" />
-          <NuxtImg :src="imageUrls?.['profile']" />
-          <NuxtImg :src="imageUrls?.['reply_thread']" />
-          <NuxtImg :src="imageUrls?.['reply']" />
-          <NuxtImg :src="imageUrls?.['quote']" />
-        </div>
-      </template>
-    </UISection>
-  </div>
+  <ProjectsPagesTemplate link="https://twitter-clone-rho-smoky.vercel.app/">
+    <template #logo>
+      <LogoTwitterClone />
+    </template>
+    <template #mainImage
+      ><NuxtImg :src="imageUrls?.['twitter_clone']"
+    /></template>
+    <template #description
+      >Inspired by the conversations surrounding Twitter's acquisition and
+      Meta's Threads, I decided to build a Twitter clone as a learning project.
+      This was my first major Nuxt application, and I used it to solidify my
+      understanding of modern front-end frameworks and component-based
+      development. I built the clone using Nuxt.js as the frontend framework,
+      Tailwind CSS for styling, Supabase as the backend, Pinia for state
+      management, and Vercel for deployment.</template
+    >
+    <template #gallery>
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <UIImageZoom :src="imageUrls?.['OAuth_Login']" />
+        <UIImageZoom :src="imageUrls?.['SmallScreen_Layout']" />
+        <UIImageZoom :src="imageUrls?.['quote_layers']" />
+        <UIImageZoom :src="imageUrls?.['SmallScreen_SidePanel']" />
+        <UIImageZoom :src="imageUrls?.['profile']" />
+        <UIImageZoom :src="imageUrls?.['reply_thread']" />
+        <UIImageZoom :src="imageUrls?.['reply']" />
+        <UIImageZoom :src="imageUrls?.['quote']" />
+      </div>
+    </template>
+  </ProjectsPagesTemplate>
 </template>

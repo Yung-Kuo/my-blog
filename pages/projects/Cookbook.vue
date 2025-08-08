@@ -4,7 +4,7 @@ const supabase = useSupabaseClient();
 onMounted(async () => {
   const { data, error } = await supabase.storage
     .from("images")
-    .list("projects/react-task-tracker");
+    .list("projects/cookbook");
   if (error) {
     console.error("Error fetching project images:", error.message);
     return;
@@ -13,7 +13,7 @@ onMounted(async () => {
   for (const image of data) {
     const { data: publicUrl } = supabase.storage
       .from("images")
-      .getPublicUrl(`projects/react-task-tracker/${image.name}`);
+      .getPublicUrl(`projects/cookbook/${image.name}`);
 
     if (publicUrl) {
       // Remove .webp extension from the name
@@ -26,24 +26,18 @@ onMounted(async () => {
 const imageUrls = ref({});
 </script>
 <template>
-  <ProjectsPagesTemplate link="https://react-task-tracker-rust.vercel.app/">
+  <ProjectsPagesTemplate link="https://cookbook-fawn-three.vercel.app/">
     <template #logo>
-      <h1 class="text-4xl font-bold text-neutral-800 dark:text-neutral-300">
-        Task Tracker
-      </h1>
+      <LogoCookbook />
     </template>
-    <template #mainImage>
-      <NuxtImg :src="imageUrls?.['react-task-tracker']" />
-    </template>
-    <template #description>
-      A simple todo list/task tracker app. My entry point of learning React
-      framework.
-    </template>
+    <template #mainImage><NuxtImg :src="imageUrls?.['cookbook']" /></template>
+    <template #description></template>
     <template #gallery>
       <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
         <UIImageZoom :src="imageUrls?.['small-screen']" />
-        <UIImageZoom :src="imageUrls?.['add-task']" />
-        <UIImageZoom :src="imageUrls?.['view-task']" />
+        <UIImageZoom :src="imageUrls?.['recipe']" />
+        <UIImageZoom :src="imageUrls?.['create-new-recipe']" />
+        <UIImageZoom :src="imageUrls?.['create-new-recipe-more']" />
       </div>
     </template>
   </ProjectsPagesTemplate>
