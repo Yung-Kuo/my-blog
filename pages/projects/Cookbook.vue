@@ -31,7 +31,11 @@ const imageUrls = ref({});
       <LogoCookbook />
     </template>
     <template #mainImage><NuxtImg :src="imageUrls?.['cookbook']" /></template>
-    <template #description></template>
+    <template #description>
+      A cookbook app that can be your personal recipe collection! Built with
+      React and Django. The modern, slick, and user-friendly design makes
+      reading recipes feel like a breeze.
+    </template>
     <template #gallery>
       <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
         <UIImageZoom :src="imageUrls?.['small-screen']" />
