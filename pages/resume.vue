@@ -52,7 +52,7 @@ useSeoMeta({
         </div>
         <div class="flex flex-wrap gap-10">
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
-            <UITitleSub noHover>Programming<br />Languages</UITitleSub>
+            <UITitleSub noHover>Programming Languages</UITitleSub>
             <div class="h-4" />
             <ul>
               <UITitleList>JavaScript</UITitleList>
