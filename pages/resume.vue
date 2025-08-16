@@ -29,9 +29,11 @@ useSeoMeta({
         <UITitleSub noHover
           >Check out my resume & portfolio on my blog:
         </UITitleSub>
-        <UITitleSub noHover class="underline"
-          >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
-        >
+        <NuxtLink to="https://my-blog-one-gamma.vercel.app/resume">
+          <UITitleSub noHover class="underline"
+            >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
+          >
+        </NuxtLink>
       </template>
     </UISection>
     <!--  -->
