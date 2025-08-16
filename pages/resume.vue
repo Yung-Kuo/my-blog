@@ -14,14 +14,24 @@ useSeoMeta({
       <template #content>
         <UITitleSub noHover>Yung Kuo</UITitleSub>
         <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
+        <UITitleSub noHover>+886 970912590</UITitleSub>
         <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
         <br />
         <UITitleSideFrame>
           <UITitleSub noHover
-            >Yung is a frontend developer with experience building a Twitter
-            clone using Nuxt.js, Tailwind, and Supabase.</UITitleSub
+            >Yung is a frontend developer with experience with modern frontend
+            frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
+        <br />
+        <br />
+        <br />
+        <UITitleSub noHover
+          >Check out my resume & portfolio on my blog:
+        </UITitleSub>
+        <UITitleSub noHover class="underline"
+          >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
+        >
       </template>
     </UISection>
     <!--  -->
@@ -40,23 +50,28 @@ useSeoMeta({
             </ul>
           </UITitleSideFrame>
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
-            <UITitleSub noHover>Technologies</UITitleSub>
+            <UITitleSub noHover>Frameworks & Libraries</UITitleSub>
             <div class="h-4" />
             <ul>
               <UITitleList>Nuxt.js</UITitleList>
-              <UITitleList>React.js</UITitleList>
+              <UITitleList>Next.js</UITitleList>
+              <UITitleList>Vue</UITitleList>
+              <UITitleList>React</UITitleList>
               <UITitleList>Tailwind</UITitleList>
-              <UITitleList>Supabase</UITitleList>
-              <UITitleList>Appwrite</UITitleList>
+              <UITitleList>Django</UITitleList>
               <UITitleList>Pinia</UITitleList>
             </ul>
           </UITitleSideFrame>
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
-            <UITitleSub noHover>Tools</UITitleSub>
+            <UITitleSub noHover>Tools & Platforms</UITitleSub>
             <div class="h-4" />
             <ul>
               <UITitleList>VSCode, Cursor, Zed</UITitleList>
               <UITitleList>Vercel</UITitleList>
+              <UITitleList>Docker</UITitleList>
+              <UITitleList>Supabase</UITitleList>
+              <UITitleList>Appwrite</UITitleList>
+              <UITitleList>Render</UITitleList>
             </ul>
           </UITitleSideFrame>
         </div>
@@ -75,7 +90,7 @@ useSeoMeta({
         <div class="flex flex-col gap-20">
           <!-- twitter-clone -->
           <div
-            class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
+            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
           >
             <ProjectsTwitterClone />
             <ul>
@@ -112,10 +127,10 @@ useSeoMeta({
               >
             </ul>
           </div>
-          <!-- react-task-tracker -->
 
+          <!-- react-task-tracker -->
           <div
-            class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 2xl:grid-cols-3"
+            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
           >
             <ProjectsReactTaskTracker />
             <ul>
@@ -131,6 +146,22 @@ useSeoMeta({
               <UITitleList>Deployd on Vercel.</UITitleList>
             </ul>
           </div>
+
+          <!-- Cookbook -->
+          <div
+            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
+          >
+            <ProjectsCookbook />
+            <ul>
+              <UITitleList
+                >A cookbook app to write down your recipes.</UITitleList
+              >
+              <UITitleList>React as the frontend.</UITitleList>
+              <UITitleList>Django as the backend.</UITitleList>
+              <UITitleList>Git for version control.</UITitleList>
+              <UITitleList>Deployed on Vercel and Render.</UITitleList>
+            </ul>
+          </div>
         </div>
       </template>
     </UISection>
@@ -142,7 +173,7 @@ useSeoMeta({
         >
       </template>
       <template #sub>
-        <UITitleSub noHover>Wow, such empty</UITitleSub>
+        <UITitleSub noHover>DataAnnotation (April 2025 - present)</UITitleSub>
       </template>
     </UISection>
     <!--  -->
