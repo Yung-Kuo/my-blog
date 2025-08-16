@@ -38,7 +38,7 @@ const isExpand = ref(true);
             <div v-else class="h-12 xl:h-20" />
           </div>
           <!-- content -->
-          <div class="w-full">
+          <div class="flex w-full flex-col gap-10">
             <slot name="content" />
           </div>
         </div>

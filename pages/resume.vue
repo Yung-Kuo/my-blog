@@ -12,28 +12,29 @@ useSeoMeta({
         <UITitleMain noHover>Contact Info</UITitleMain>
       </template>
       <template #content>
-        <UITitleSub noHover>Yung Kuo</UITitleSub>
-        <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
-        <UITitleSub noHover>+886 970912590</UITitleSub>
-        <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
-        <br />
+        <div>
+          <UITitleSub noHover>Yung Kuo</UITitleSub>
+          <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
+          <UITitleSub noHover>+886 970912590</UITitleSub>
+          <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
+        </div>
+
         <UITitleSideFrame>
           <UITitleSub noHover
             >Yung is a frontend developer with experience with modern frontend
             frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
-        <br />
-        <br />
-        <br />
-        <UITitleSub noHover
-          >Check out my resume & portfolio on my blog:
-        </UITitleSub>
-        <NuxtLink to="https://my-blog-one-gamma.vercel.app/resume">
-          <UITitleSub noHover class="underline"
-            >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
-          >
-        </NuxtLink>
+        <div>
+          <UITitleSub noHover
+            >Check out my resume & portfolio on my blog:
+          </UITitleSub>
+          <NuxtLink to="https://my-blog-one-gamma.vercel.app/resume">
+            <UITitleSub noHover class="underline"
+              >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
+            >
+          </NuxtLink>
+        </div>
       </template>
     </UISection>
     <!--  -->
@@ -42,6 +43,13 @@ useSeoMeta({
         <UITitleMain noHover>Skills</UITitleMain>
       </template>
       <template #content>
+        <div>
+          <UITitleSub noHover>Native Mandarin speaker</UITitleSub>
+          <UITitleSub noHover
+            >Fluent in English – TOEIC 990, 4 years of flatmate experience with
+            foreign students
+          </UITitleSub>
+        </div>
         <div class="flex flex-wrap gap-10">
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
             <UITitleSub noHover>Programming<br />Languages</UITitleSub>
