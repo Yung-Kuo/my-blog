@@ -4,6 +4,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  isLink: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 <template>
@@ -12,6 +16,8 @@ const props = defineProps({
     :class="{
       'hover:scale-105 hover:text-neutral-700 dark:hover:text-neutral-300':
         !props.noHover,
+      'underline decoration-yellow-500 decoration-2 transition-all hover:!text-white hover:decoration-yellow-400':
+        props.isLink,
     }"
   >
     <h3 class="flex items-center gap-2">

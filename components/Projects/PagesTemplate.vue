@@ -31,11 +31,8 @@ const props = defineProps({
         <br />
         <div class="md:flex md:gap-2">
           <UITitleSub noHover>Link to the project:</UITitleSub>
-          <NuxtLink
-            :to="props.link"
-            class="underline decoration-yellow-500 decoration-2 transition-all hover:decoration-yellow-400"
-          >
-            <UITitleSub noHover class="hover:!text-white">
+          <NuxtLink :to="props.link">
+            <UITitleSub noHover isLink>
               {{ props.link }}
             </UITitleSub>
           </NuxtLink>
