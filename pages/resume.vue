@@ -25,16 +25,16 @@ useSeoMeta({
             frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
-        <div>
+        <!-- <div>
           <UITitleSub noHover
             >Check out my resume & portfolio on my blog:
           </UITitleSub>
-          <NuxtLink to="https://my-blog-one-gamma.vercel.app/resume">
+          <NuxtLink to="/resume">
             <UITitleSub noHover isLink
               >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
             >
           </NuxtLink>
-        </div>
+        </div> -->
       </template>
     </UISection>
     <!--  -->
