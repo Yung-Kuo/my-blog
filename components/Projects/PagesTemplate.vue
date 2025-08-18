@@ -31,7 +31,7 @@ const props = defineProps({
         <br />
         <div class="md:flex md:gap-2">
           <UITitleSub noHover>Link to the project:</UITitleSub>
-          <NuxtLink :to="props.link">
+          <NuxtLink :to="props.link" target="_blank">
             <UITitleSub noHover isLink>
               {{ props.link }}
             </UITitleSub>
