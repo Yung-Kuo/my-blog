@@ -25,6 +25,7 @@ useSeoMeta({
             frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
+        <!-- for resume.pdf -->
         <!-- <div>
           <UITitleSub noHover
             >Check out my resume & portfolio on my blog:
