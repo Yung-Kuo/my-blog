@@ -16,7 +16,7 @@ const props = defineProps({
     :class="{
       'hover:scale-105 hover:text-neutral-700 dark:hover:text-neutral-200':
         !props.noHover,
-      'underline decoration-yellow-400 decoration-4 underline-offset-8 transition-all hover:text-neutral-500 hover:decoration-yellow-600 dark:decoration-2 dark:hover:text-white':
+      'underline decoration-yellow-400 decoration-4 transition-all hover:text-neutral-500 hover:decoration-yellow-600 dark:decoration-2 dark:hover:text-white dark:hover:decoration-yellow-400 dark:hover:decoration-4':
         props.isLink,
     }"
   >
