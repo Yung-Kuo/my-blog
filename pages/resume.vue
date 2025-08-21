@@ -21,7 +21,7 @@ useSeoMeta({
 
         <UITitleSideFrame>
           <UITitleSub noHover
-            >Yung is a frontend developer with experience with modern frontend
+            >Yung is a frontend developer with experience in modern frontend
             frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
