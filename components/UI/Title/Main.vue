@@ -16,9 +16,9 @@ const props = defineProps({
 </script>
 <template>
   <div
-    class="flex max-w-full text-4xl font-medium text-neutral-800 transition-all dark:text-neutral-300 xl:text-6xl"
+    class="flex max-w-full text-4xl font-medium text-neutral-800 transition-all dark:text-neutral-200 xl:text-6xl"
     :class="{
-      'cursor-pointer hover:scale-105 hover:text-neutral-900 active:scale-100 dark:hover:text-neutral-200':
+      'cursor-pointer hover:scale-105 hover:text-neutral-900 active:scale-100 dark:hover:text-neutral-100':
         !props.noHover,
       'group flex cursor-pointer gap-2': props.expand,
     }"
