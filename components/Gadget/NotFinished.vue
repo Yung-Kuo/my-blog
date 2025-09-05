@@ -4,7 +4,8 @@
   >
     <span
       class="whitespace-nowrap text-xl font-bold text-neutral-800 transition-all dark:text-neutral-200"
-      >Still in the works...</span
     >
+      <slot> Still in the works... </slot>
+    </span>
   </div>
 </template>

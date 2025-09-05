@@ -27,6 +27,11 @@ const imageUrls = ref({});
 </script>
 <template>
   <ProjectsPagesTemplate link="https://cookbook-fawn-three.vercel.app/">
+    <template #warning>
+      <GadgetNotFinished
+        >Database down (Render free tier expired)</GadgetNotFinished
+      >
+    </template>
     <template #logo>
       <LogoCookbook />
     </template>

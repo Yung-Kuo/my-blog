@@ -8,6 +8,7 @@ const props = defineProps({
 </script>
 <template>
   <div class="flex flex-col gap-20 pt-20 xl:gap-40">
+    <slot name="warning" />
     <!-- project logo -->
     <div class="flex justify-center">
       <NuxtLink
