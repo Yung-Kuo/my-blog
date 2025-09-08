@@ -145,16 +145,14 @@ useSeoMeta({
           >
             <ProjectsReactTaskTracker />
             <ul>
-              <UITitleList
-                >A simple todo list app built with React.</UITitleList
-              >
-              <UITitleList>Styled with Tailwind CSS.</UITitleList>
+              <UITitleList>A simple todo list app built with React</UITitleList>
+              <UITitleList>Styled with Tailwind CSS</UITitleList>
               <UITitleList
                 >Appwrite as backend services. Using Magic URL as user sign in
-                method.</UITitleList
+                method</UITitleList
               >
-              <UITitleList>Git for version control.</UITitleList>
-              <UITitleList>Deployd on Vercel.</UITitleList>
+              <UITitleList>Git for version control</UITitleList>
+              <UITitleList>Deployd on Vercel</UITitleList>
             </ul>
           </div>
 
@@ -165,12 +163,15 @@ useSeoMeta({
             <ProjectsCookbook />
             <ul>
               <UITitleList
-                >A cookbook app to write down your recipes.</UITitleList
+                >A cookbook app to write down your recipes</UITitleList
               >
-              <UITitleList>React as the frontend.</UITitleList>
-              <UITitleList>Django as the backend.</UITitleList>
-              <UITitleList>Git for version control.</UITitleList>
-              <UITitleList>Deployed on Vercel and Render.</UITitleList>
+              <UITitleList>React as the frontend</UITitleList>
+              <UITitleList>Django as the backend</UITitleList>
+              <UITitleList>Git for version control</UITitleList>
+              <UITitleList
+                >Frontend on Vercel, backend on Render, database on
+                Neon</UITitleList
+              >
             </ul>
           </div>
         </div>
