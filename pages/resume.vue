@@ -107,31 +107,23 @@ useSeoMeta({
             <ProjectsTwitterClone />
             <ul>
               <UITitleList
-                >Developed a social media application using Nuxt.js for frontend
-                development.</UITitleList
+                >Developed a social media platform using Nuxt.js as the frontend
+                framework.</UITitleList
               >
               <UITitleList
-                >Implemented core social media functionalities such as posting,
-                replying, retweeting, liking, and bookmarking
-                tweets.</UITitleList
+                >Implemented core social media platform functionalities such as
+                posting, replying, retweeting, liking, and
+                bookmarking.</UITitleList
               >
               <UITitleList
-                >Styled the application with Tailwind CSS for a responsive and
-                visually appealing user interface across desktop and mobile
-                devices.</UITitleList
+                >Styled the application with Tailwind CSS for RWD and visually
+                appealing user interface.</UITitleList
               >
               <UITitleList
                 >Integrated Supabase for backend services, including user
                 authentication with OAuth.</UITitleList
               >
-              <UITitleList
-                >Utilized Pinia for state management to improve application
-                performance and user experience.</UITitleList
-              >
-              <UITitleList
-                >Used Git for version control, branching for feature
-                development, and pushing updates to the GitHub
-                repository.</UITitleList
+              <UITitleList>Utilized Pinia for state management.</UITitleList>
               >
               <UITitleList
                 >Deployed the project on Vercel for reliable hosting and
