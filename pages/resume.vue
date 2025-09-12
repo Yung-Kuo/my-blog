@@ -124,7 +124,6 @@ useSeoMeta({
                 authentication with OAuth.</UITitleList
               >
               <UITitleList>Utilized Pinia for state management.</UITitleList>
-              >
               <UITitleList
                 >Deployed the project on Vercel for reliable hosting and
                 streamlined deployment processes.</UITitleList
