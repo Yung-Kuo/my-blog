@@ -11,6 +11,8 @@ const image = ref("");
 <template>
   <ProjectsTemplate :imgSrc="image" project="TwitterClone">
     <template #name>Twitter Clone </template>
-    <template #description>Social platform with adaptive web design</template>
+    <template #description
+      >Functioning social platform with responsive web design</template
+    >
   </ProjectsTemplate>
 </template>
