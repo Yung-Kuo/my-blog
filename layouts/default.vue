@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div>
-    <div class="fixed top-6 z-30 flex w-full justify-between px-6">
+    <div class="fixed top-6 z-30 flex gap-2 lg:gap-6 w-full justify-between px-6">
       <GadgetHome />
       <div class="flex gap-2 lg:gap-6">
         <GadgetGithub />
