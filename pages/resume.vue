@@ -90,7 +90,6 @@ useSeoMeta({
       </template>
     </UISection>
     <!--  -->
-    <!-- <div class="flex flex-wrap gap-10 xl:gap-0"> -->
     <!-- Projects -->
     <UISection expand>
       <template #title="titleProps">
@@ -99,7 +98,7 @@ useSeoMeta({
         >
       </template>
       <template #content>
-        <div class="flex flex-col gap-20">
+        <div class="flex flex-col gap-20 md:gap-32">
           <!-- twitter-clone -->
           <div
             class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
