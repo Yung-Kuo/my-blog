@@ -176,7 +176,22 @@ useSeoMeta({
         >
       </template>
       <template #sub>
-        <UITitleSub noHover>DataAnnotation (April 2025 - present)</UITitleSub>
+        <div className="flex flex-col gap-2">
+          <UITitleSub noHover>DataAnnotation (April 2025 - present)</UITitleSub>
+          <UITitleSideFrame>
+            <UITitleSub smallText noHover
+              >AI Trainer (Language Model Focus) / Prompt Engineer</UITitleSub
+            >
+          </UITitleSideFrame>
+
+          <UITitleSideFrame>
+            <UITitleSub smallText noHover
+              >Evaluated and validated Large Language Model (LLM) responses for
+              accuracy, relevance, and adherence to specific linguistic
+              guidelines.</UITitleSub
+            >
+          </UITitleSideFrame>
+        </div>
       </template>
     </UISection>
     <!--  -->
