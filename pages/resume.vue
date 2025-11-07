@@ -183,11 +183,10 @@ useSeoMeta({
               >AI Trainer (Language Model Focus) / Prompt Engineer</UITitleSub
             >
           </UITitleSideFrame>
-
           <UITitleSideFrame>
             <UITitleSub smallText noHover
-              >Evaluated and validated Large Language Model (LLM) responses for
-              accuracy, relevance, and adherence to specific linguistic
+              >Evaluate and validate Language Models' responses for accuracy,
+              relevance, and adherence to specific linguistic
               guidelines.</UITitleSub
             >
           </UITitleSideFrame>
