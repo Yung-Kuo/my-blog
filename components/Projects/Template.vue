@@ -13,16 +13,12 @@ const props = defineProps({
 <template>
   <div class="flex w-full flex-col items-center gap-4">
     <NuxtLink :to="`/projects/${props.project}`" className="w-full">
-      <UIImageZoom
-        v-if="props.imgSrc"
-        :src="props.imgSrc"
-        class="h-auto w-full"
-      >
+      <UIImageZoom v-if="props.imgSrc" :src="props.imgSrc" class="w-full">
         <template #text>Go to project</template>
       </UIImageZoom>
       <div
         v-else
-        class="flex h-auto w-full items-center justify-center bg-neutral-200 py-20 dark:bg-neutral-800"
+        class="flex w-full items-center justify-center bg-neutral-200 py-20 dark:bg-neutral-800"
       >
         <span class="text-neutral-500 dark:text-neutral-400"
           >Image loading...</span
