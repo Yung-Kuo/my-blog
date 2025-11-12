@@ -15,7 +15,7 @@ useSeoMeta({
         <div>
           <UITitleSub noHover>Yung Kuo</UITitleSub>
           <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
-          <UITitleSub noHover>+886 970912590</UITitleSub>
+          <UITitleSub noHover>0970912590</UITitleSub>
           <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
         </div>
 
@@ -25,17 +25,6 @@ useSeoMeta({
             frameworks, Tailwind, BaaS, Django, Docker, and Git</UITitleSub
           >
         </UITitleSideFrame>
-        <!-- for resume.pdf -->
-        <!-- <div>
-          <UITitleSub noHover
-            >Check out my resume & portfolio on my blog:
-          </UITitleSub>
-          <NuxtLink to="/resume">
-            <UITitleSub noHover isLink
-              >https://my-blog-one-gamma.vercel.app/resume</UITitleSub
-            >
-          </NuxtLink>
-        </div> -->
       </template>
     </UISection>
     <!--  -->
@@ -45,11 +34,9 @@ useSeoMeta({
       </template>
       <template #content>
         <div>
-          <UITitleSub noHover>Native Mandarin speaker</UITitleSub>
           <UITitleSub noHover
-            >Fluent in English – TOEIC 990, 4 years of flatmate experience with
-            foreign students
-          </UITitleSub>
+            >Native Mandarin speaker, Fluent in English (TOEIC 990)</UITitleSub
+          >
         </div>
         <div class="flex flex-wrap gap-10">
           <UITitleSideFrame class="min-h-40 min-w-60 xl:min-h-60">
