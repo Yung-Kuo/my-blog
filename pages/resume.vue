@@ -65,12 +65,13 @@ useSeoMeta({
             <div class="h-4" />
             <ul>
               <UITitleList>VSCode, Cursor, Zed</UITitleList>
-              <UITitleList>Vercel</UITitleList>
-              <UITitleList>Docker</UITitleList>
               <UITitleList>Supabase</UITitleList>
               <UITitleList>Appwrite</UITitleList>
+              <UITitleList>Vercel</UITitleList>
               <UITitleList>Render</UITitleList>
               <UITitleList>Neon</UITitleList>
+              <UITitleList>Docker</UITitleList>
+              <UITitleList>Figma</UITitleList>
             </ul>
           </UITitleSideFrame>
         </div>

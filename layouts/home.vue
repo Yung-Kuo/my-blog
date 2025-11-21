@@ -69,12 +69,14 @@ function handleWheelEvent(event) {
     root.classList.add("xl:overflow-y-hidden");
     // root.classList.remove("overflow-y-scroll");
   }
+
+  const isVisible = ref(false);
 }
 </script>
 <template>
   <div
     id="root"
-    class="h-screen w-full overflow-y-scroll bg-neutral-100 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
+    class="h-screen w-full overflow-y-scroll scroll-smooth bg-neutral-100 transition-all duration-300 dark:bg-neutral-900 xl:overflow-y-hidden"
     @wheel="handleWheelEvent($event)"
   >
     <div class="fixed right-6 top-6 z-30 flex gap-2 lg:gap-6">

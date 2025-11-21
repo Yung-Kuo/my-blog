@@ -8,6 +8,11 @@ definePageMeta({
 });
 
 const supabase = useSupabaseClient();
+const gallery = ref([]);
+
+const showGoToTop = ref(false);
+const triggerSection = ref(null);
+let observer = null;
 
 onMounted(async () => {
   const { data: images, error: error } = await supabase.storage
@@ -30,29 +35,53 @@ onMounted(async () => {
     }
     gallery.value = publicUrls;
   }
-});
 
-const gallery = ref([]);
+  // Check if the browser supports IntersectionObserver (it usually does)
+  console.log("triggerSection: ", triggerSection.value);
+  if (!triggerSection.value) return;
+
+  const options = {
+    root: null, // null means relative to the viewport
+    threshold: 0, // Trigger as soon as even 1 pixel is visible/invisible
+  };
+
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // logic: If element is NOT intersecting (not visible)
+      // AND its position is negative (meaning it went up, not down)
+      if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+        showGoToTop.value = true;
+      } else {
+        showGoToTop.value = false;
+      }
+    });
+  }, options);
+
+  // Start watching the element
+  observer.observe(triggerSection.value);
+});
+// Cleanup to prevent memory leaks
+onUnmounted(() => {
+  if (observer && triggerSection.value) {
+    observer.unobserve(triggerSection.value);
+  }
+});
 </script>
 <template>
   <div
     id="body"
-    class="flex flex-col items-center gap-36 px-6 py-40 text-2xl text-neutral-500 xl:gap-48 xl:px-20 xl:pt-20"
+    class="flex flex-col items-center gap-36 px-6 pb-40 text-2xl text-neutral-500 xl:gap-48 xl:px-20"
   >
+    <!-- scroll to top -->
+    <GadgetGoToTop v-show="showGoToTop" />
     <!-- Projects -->
-    <UISection>
+    <UISection id="goToTop" class="pt-32 xl:pt-20">
       <template #title>
         <UITitleMain> Projects /</UITitleMain>
       </template>
-      <!-- divider -->
-      <!-- <template #sub>
-        <div
-          class="w-full border-2 border-neutral-400 transition-all dark:border-neutral-700"
-        ></div>
-      </template> -->
       <!-- project links -->
       <template #content>
-        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
           <ProjectsTwitterClone />
           <ProjectsReactTaskTracker />
           <ProjectsCookbook />
@@ -60,22 +89,24 @@ const gallery = ref([]);
       </template>
     </UISection>
     <!-- Resume -->
-    <UISection>
-      <template #content>
-        <div class="flex w-full justify-center">
-          <NuxtLink to="/resume">
-            <div
-              class="group flex w-60 cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 py-6 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 lg:w-80 xl:py-10"
-            >
-              <UITitleAlt
-                class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"
-                >Resume</UITitleAlt
+    <div ref="triggerSection">
+      <UISection>
+        <template #content>
+          <div class="flex w-full justify-center">
+            <NuxtLink to="/resume">
+              <div
+                class="group flex w-60 cursor-pointer justify-center rounded-md bg-neutral-400 bg-opacity-50 py-6 text-center transition-all hover:scale-105 active:scale-100 dark:bg-neutral-700 lg:w-80 xl:py-10"
               >
-            </div>
-          </NuxtLink>
-        </div>
-      </template>
-    </UISection>
+                <UITitleAlt
+                  class="text-neutral-700 group-hover:font-semibold group-hover:text-neutral-800 dark:text-neutral-300 dark:group-hover:text-neutral-200"
+                  >Resume</UITitleAlt
+                >
+              </div>
+            </NuxtLink>
+          </div>
+        </template>
+      </UISection>
+    </div>
 
     <!-- Gallery -->
     <UISection>
@@ -86,12 +117,11 @@ const gallery = ref([]);
         <UITitleSub>Digital & Analog</UITitleSub>
       </template>
       <template #content>
-        <ul class="flex w-full flex-wrap gap-2 xl:gap-8">
+        <ul
+          class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4 xl:gap-8 2xl:grid-cols-6"
+        >
           <li v-for="pic in gallery">
-            <UIImageZoom
-              :src="pic"
-              class="h-40 w-40 rounded-sm xl:h-64 xl:w-64"
-            />
+            <UIImageZoom :src="pic" class="aspect-square rounded-sm" />
           </li>
         </ul>
       </template>
