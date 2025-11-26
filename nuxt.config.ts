@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
 
   gtag: {
-    id: "G-4509TG5XBY",
+    id: process.env.GTAG_ID,
   },
 
   supabase: {
