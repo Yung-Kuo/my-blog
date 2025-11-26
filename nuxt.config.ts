@@ -5,10 +5,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@nuxt/image",
+    "nuxt-gtag",
   ],
 
   app: {
     layoutTransition: { name: "layout", mode: "out-in" },
+  },
+
+  gtag: {
+    id: "G-4509TG5XBY",
   },
 
   supabase: {
