@@ -13,7 +13,8 @@ useSeoMeta({
       </template>
       <template #content>
         <div>
-          <UITitleSub noHover>Yung Kuo</UITitleSub>
+          <UITitleSub noHover class="!text-4xl font-bold">Yung Kuo</UITitleSub>
+          <br />
           <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
           <UITitleSub noHover>(+886) 970 912 590</UITitleSub>
           <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
@@ -35,7 +36,7 @@ useSeoMeta({
       <template #content>
         <div>
           <UITitleSub noHover
-            >Native Mandarin speaker, Fluent in English (TOEIC 990)</UITitleSub
+            >Native Mandarin speaker, fluent in English (TOEIC 990)</UITitleSub
           >
         </div>
         <div class="flex flex-wrap gap-10">
@@ -168,7 +169,7 @@ useSeoMeta({
           <UITitleSub noHover>DataAnnotation (April 2025 - present)</UITitleSub>
           <UITitleSideFrame>
             <UITitleSub smallText noHover
-              >AI Trainer (Language Model Focus) / Prompt Engineer</UITitleSub
+              >AI Language Model Evaluator</UITitleSub
             >
           </UITitleSideFrame>
           <UITitleSideFrame>
