@@ -15,7 +15,7 @@ useSeoMeta({
         <div>
           <UITitleSub noHover>Yung Kuo</UITitleSub>
           <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
-          <UITitleSub noHover>0970912590</UITitleSub>
+          <UITitleSub noHover>(+886) 970 912 590</UITitleSub>
           <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
         </div>
 
