@@ -94,26 +94,45 @@ useSeoMeta({
             <ProjectsTwitterClone />
             <ul>
               <UITitleList
-                >Developed a social media platform using Nuxt.js as the frontend
-                framework.</UITitleList
+                >Developed a functioning social media platform with a focus on
+                smooth data flow and responsive UI.</UITitleList
               >
               <UITitleList
-                >Implemented core social media platform functionalities such as
-                posting, replying, retweeting, liking, and
-                bookmarking.</UITitleList
+                >Architected relational database structures in Supabase,
+                applying normalization principles to ensure data integrity and
+                eliminate multi-valued dependencies.</UITitleList
               >
               <UITitleList
-                >Styled the application with Tailwind CSS for RWD and visually
-                appealing user interface.</UITitleList
+                >Optimized state management using Pinia to ensure seamless data
+                synchronization between frontend and backend.</UITitleList
+              >
+            </ul>
+          </div>
+
+          <!-- Cookbook -->
+          <div
+            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
+          >
+            <ProjectsCookbook />
+            <ul>
+              <UITitleList
+                >Architected a backend using Django and DRF, designing
+                relational data models to ensure efficient querying and data
+                consistency.</UITitleList
               >
               <UITitleList
-                >Integrated Supabase for backend services, including user
-                authentication with OAuth.</UITitleList
+                >Containerized the application with Docker to ensure a
+                consistent environment deployment, demonstrating a foundational
+                understanding of modern software infrastructure.</UITitleList
               >
-              <UITitleList>Utilized Pinia for state management.</UITitleList>
               <UITitleList
-                >Deployed the project on Vercel for reliable hosting and
-                streamlined deployment processes.</UITitleList
+                >Designed a clear and efficient layout with Tailwind CSS,
+                optimizing information hierarchy to ensure a seamless and
+                efficient reading experience.</UITitleList
+              >
+              <UITitleList
+                >Deployed on Vercel(frontend), Render(backend), and
+                Neon(database).</UITitleList
               >
             </ul>
           </div>
@@ -132,25 +151,6 @@ useSeoMeta({
               >
               <UITitleList>Git for version control</UITitleList>
               <UITitleList>Deployd on Vercel</UITitleList>
-            </ul>
-          </div>
-
-          <!-- Cookbook -->
-          <div
-            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3"
-          >
-            <ProjectsCookbook />
-            <ul>
-              <UITitleList
-                >A cookbook app to write down your recipes</UITitleList
-              >
-              <UITitleList>React as the frontend</UITitleList>
-              <UITitleList>Django as the backend</UITitleList>
-              <UITitleList>Git for version control</UITitleList>
-              <UITitleList
-                >Frontend on Vercel, backend on Render, database on
-                Neon</UITitleList
-              >
             </ul>
           </div>
         </div>
