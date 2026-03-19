@@ -7,14 +7,23 @@ useSeoMeta({
 <template>
   <!--  -->
   <div class="flex flex-col gap-20 xl:gap-40">
-    <UISection>
-      <template #title>
-        <UITitleMain noHover>Contact Info</UITitleMain>
+    <UISection expand>
+      <template #title="titleProps">
+        <UITitleMain expand :isExpand="titleProps.isExpand" noHover
+          >Contact Info</UITitleMain
+        >
       </template>
       <template #content>
         <div>
-          <UITitleSub noHover class="!text-4xl font-bold">Yung Kuo</UITitleSub>
-          <br />
+          <UITitleSub noHover class="group py-2 xl:py-4">
+            <div
+              class="mr-4 h-full w-2 rounded-full border-b-8 border-neutral-400 transition-all delay-300 duration-150 group-hover:mr-2 group-hover:w-8 group-hover:rounded-r-none group-hover:delay-0 dark:border-neutral-600 group-hover:xl:w-12"
+            />
+            Yung Kuo
+            <div
+              class="ml-2 h-full w-0 rounded-r-full border-b-8 border-neutral-400 transition-all delay-0 duration-300 group-hover:w-8 group-hover:delay-300 dark:border-neutral-600 group-hover:xl:w-80"
+            />
+          </UITitleSub>
           <UITitleSub noHover>yungkuo429@gmail.com</UITitleSub>
           <UITitleSub noHover>(+886) 970 912 590</UITitleSub>
           <UITitleSub noHover>Kaohsiung, Taiwan</UITitleSub>
@@ -28,10 +37,12 @@ useSeoMeta({
         </UITitleSideFrame>
       </template>
     </UISection>
-    <!--  -->
-    <UISection>
-      <template #title>
-        <UITitleMain noHover>Skills</UITitleMain>
+    <!-- Skills -->
+    <UISection expand>
+      <template #title="titleProps">
+        <UITitleMain expand :isExpand="titleProps.isExpand" noHover
+          >Skills</UITitleMain
+        >
       </template>
       <template #content>
         <div>

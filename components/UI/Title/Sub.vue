@@ -29,7 +29,7 @@ const props = defineProps({
       },
     ]"
   >
-    <h3 class="flex items-center gap-2">
+    <h3 class="flex items-center gap-0">
       <slot />
     </h3>
   </div>
